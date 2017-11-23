@@ -1,6 +1,6 @@
 
         <section id="works" class="page-section">
-            <div class="image-bg content-in fixed" data-background="img/sections/bg/bg-13.jpg">
+            <div class="image-bg content-in fixed" data-background="<?= base_url()?>img/fondog.jpg">
                 <div class="overlay"></div>
             </div>
             <div class="container work-section">
