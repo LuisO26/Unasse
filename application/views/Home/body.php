@@ -203,7 +203,8 @@
                 <h4 class="text-center white" style="margin:0px;">Unidad de Atención Sicológica, Sexológica y Educativa para el Crecimiento Personal.</h4>
             </div>
         </section>
-         <section id="service" class="page-section">
+         <section id="about-us" class="page-section">
+            <div class="container">
             <div class="row">
                         <div class="col-md-12">
                             <div class="row text-center">
@@ -235,6 +236,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
         </section>
         <section id="about-us" class="page-section">
             <div class="container">
@@ -286,24 +288,11 @@
                                         <blockquote class="small-text text-center">
                                             The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. 
                                         </blockquote>
-                                        <div class="star-rating text-center">
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star-half-o  text-color"></i>
-                                        </div>
                                     </div>
                                     <div class="client-details text-center">
-                                        <div class="client-image">
-                                            <!-- Image -->
-                                            <img class="img-circle" src="img/sections/testimonials/1.jpg" width="80" height="80" alt="">
-                                        </div>
                                         <div class="client-details">
                                             <!-- Name -->
                                             <strong class="text-color">John Doe</strong>
-                                            <!-- Company -->
-                                            <span>Designer, zozothemes</span>
                                         </div>
                                     </div>
                                 </div>
@@ -312,24 +301,11 @@
                                         <blockquote class="small-text text-center">
                                             The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. 
                                         </blockquote>
-                                        <div class="star-rating text-center">
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star-half-o  text-color"></i>
-                                        </div>
                                     </div>
                                     <div class="client-details text-center">
-                                        <div class="client-image">
-                                            <!-- Image -->
-                                            <img class="img-circle" src="img/sections/testimonials/2.jpg" width="80" height="80" alt="">
-                                        </div>
                                         <div class="client-details">
                                             <!-- Name -->
                                             <strong class="text-color">John Doe</strong>
-                                            <!-- Company -->
-                                            <span>Designer, zozothemes</span>
                                         </div>
                                     </div>
                                 </div>
@@ -338,24 +314,11 @@
                                         <blockquote class="small-text text-center">
                                             The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. 
                                         </blockquote>
-                                        <div class="star-rating text-center">
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star  text-color"></i>
-                                            <i class="fa fa-star-half-o  text-color"></i>
-                                        </div>
                                     </div>
                                     <div class="client-details text-center">
-                                        <div class="client-image">
-                                            <!-- Image -->
-                                            <img class="img-circle" src="img/sections/testimonials/3.jpg" width="80" height="80" alt="">
-                                        </div>
                                         <div class="client-details">
                                             <!-- Name -->
                                             <strong class="text-color">John Doe</strong>
-                                            <!-- Company -->
-                                            <span>Designer, zozothemes</span>
                                         </div>
                                     </div>
                                 </div>
@@ -365,12 +328,4 @@
                 </div>
             </section>
         
-        <div id="get-quote" class="bg-color get-a-quote black text-center">
-            <div class="container" data-animation="pulse">
-                <div class="row">
-                    <div class="col-md-12">Let's Stop This Hunger? 
-                    <a class="black" href="#">Give your Hands</a></div>
-                </div>
-            </div>
-        </div>
         

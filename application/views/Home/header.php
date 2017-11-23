@@ -36,4 +36,5 @@
         <link href="<?= base_url()?>/assets/css/responsive.css" rel="stylesheet" />
         <!-- Color Scheme -->
         <link href="<?= base_url()?>/assets/css/color.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/62e1871cad.js"></script>
     </head>

@@ -26,4 +26,12 @@ class Home extends CI_Controller {
 		$this->load->view('Home/footer');
 		$this->load->view('Home/scripts');
 	}
+	public function Galeria()
+	{
+		$this->load->view('Home/header');
+		$this->load->view('Home/nav');
+		$this->load->view('Home/bodyGaleria');
+		$this->load->view('Home/footer');
+		$this->load->view('Home/scripts');
+	}
 }
