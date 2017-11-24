@@ -2,7 +2,7 @@
 <html lang="es-MX">
     <head>
         <meta charset="utf-8" />
-        <title>Unasse - Inicio</title>
+        <title>Unasse - <?= $header ?></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="keywords" content="" />
         <meta name="description" content="" />

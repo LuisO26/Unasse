@@ -22,43 +22,70 @@
                                 <div class="navbar-collapse collapse" style="padding-top: 10px">
                                     <ul class="nav navbar-nav">
                                         <li class="">
-                                            <a href="../../">Inicio</a>
+                                            <a href="<?=base_url()?>">Inicio</a>
                                             
                                         </li>
                                         <li class="">
-                                            <a href="#">Galería</a>
+                                            <a href="<?=base_url()?>/index.php/Home/Galeria">Galería</a>
                                             
                                         </li>
                                         <li>
                                         <a href="#">¿Quienes somos?</a> 
                                         <ul class="dropdown-menu">
                                                 <li>
-                                                <a href="#">Grid</a>
+                                                <a href="<?=base_url()?>/index.php/Home/Nosotros">Nosotros</a>
+                                                </li>
+                                                <li>
+                                                <a href="<?=base_url()?>/index.php/Home/Servicios">Servicios</a>
                                                 </li>
                                             </ul>
                                         <li>
-                                        <a href="#">Descargas</a> 
+                                        <a href="<?=base_url()?>/index.php/Home/Descargas">Descargas</a> 
                                     </li>
                                         <li>
-                                        <a href="#">Pruebas</a> 
+                                        <a href="<?=base_url()?>/index.php/Home/Pruebas">Pruebas</a> 
                                         
                                         <li>
-                                        <a href="#">Contacto</a> 
+                                        <a href="<?=base_url()?>/index.php/Home/Contacto">Contacto</a> 
                                         </li>
+                                        <li class="hidden-767">
+                                            <a href="#" class="header-contact">
+                                                <span>
+                                                    <i class="fa fa-mobile"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <!-- Header Search 
+                                        <li class="hidden-767">
+                                            <a href="#" class="header-search">
+                                                <span>
+                                                    <i class="fa fa-search"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                         Header Share -->
+                                        <li class="hidden-767">
+                                            <a href="#" class="header-share">
+                                                <span>
+                                                    <i class="fa fa-share-alt"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                         
                                     </ul>
                                     <!-- Right nav -->
                                     <!-- Header Contact Content -->
-                                    <div class="bg-white hide-show-content no-display header-contact-content">
-                                        <p class="vertically-absolute-middle">Call Us 
-                                        <strong>+0 (123) 456 78 90</strong></p>
+                                    <div style="background-color: #884abf !important" class="bg-white hide-show-content no-display header-contact-content">
+                                        <p class="vertically-absolute-middle">Contáctanos 
+                                        <strong>+52 999 9 99 99 99</strong></p>
                                         <button class="close">
                                             <i class="fa fa-times"></i>
                                         </button>
                                     </div>
                                     <!-- Header Contact Content -->
                                     <!-- Header Search Content -->
-                                    <div class="bg-white hide-show-content no-display header-search-content">
+                                    <div style="background-color: #884abf !important" class="bg-white hide-show-content no-display header-search-content">
                                         <form role="search" class="navbar-form vertically-absolute-middle">
                                             <div class="form-group">
                                                 <input type="text" placeholder="Enter your text &amp; Search Here"
@@ -71,7 +98,7 @@
                                     </div>
                                     <!-- Header Search Content -->
                                     <!-- Header Share Content -->
-                                    <div class="bg-white hide-show-content no-display header-share-content">
+                                    <div style="background-color: #884abf !important" class="bg-white hide-show-content no-display header-share-content">
                                         <div class="vertically-absolute-middle social-icon gray-bg icons-circle i-3x">
                                         <a href="#">
                                             <i class="fa fa-facebook"></i>

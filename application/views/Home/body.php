@@ -35,24 +35,13 @@
                             <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>We need your help</strong>
+                                <strong>Informate</strong>
                             </h2>
                             <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
                             data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>Let’s Stop This Hunger and
-                                <br />Fullfill Their Happiness</strong>
+                                <strong>Y Aprende</strong>
                             </h2>
-                            <div class="tp-caption tp-resizeme lfr skewtoright description white" data-x="502" data-y="395"
-                            data-speed="1000" data-start="1900" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <p>Proin a velit aliquam vitae malesuada rutrum. Proin a velit aliquam vitae malesuada rutrum.
-                                Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam
-                                vitae. Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper</p>
-                            </div>
-                            <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" data-x="502" data-y="492"
-                            data-speed="1000" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">Donate Now</a>
                         </div>
                         <img src="<?= base_url()?>assets/img/2.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
@@ -62,24 +51,11 @@
                             <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>We need your help</strong>
+                                <strong>Contáctanos</strong>
                             </h2>
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Let’s Stop This Hunger and
-                                <br />Fullfill Their Happiness</strong>
-                            </h2>
-                            <div class="tp-caption tp-resizeme lfr skewtoright description white" data-x="502" data-y="395"
-                            data-speed="1000" data-start="1900" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <p>Proin a velit aliquam vitae malesuada rutrum. Proin a velit aliquam vitae malesuada rutrum.
-                                Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam
-                                vitae. Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper</p>
-                            </div>
                             <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" data-x="502" data-y="492"
                             data-speed="1000" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">Donate Now</a>
+                            data-endeasing="Power1.easeIn">Aquí</a>
                         </div>
                         <img src="<?= base_url()?>assets/img/3.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
@@ -89,51 +65,21 @@
                             <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>We need your help</strong>
+                                <strong>Hazte la prueba</strong>
                             </h2>
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Let’s Stop This Hunger and
-                                <br />Fullfill Their Happiness</strong>
-                            </h2>
-                            <div class="tp-caption tp-resizeme lfr skewtoright description white" data-x="502" data-y="395"
-                            data-speed="1000" data-start="1900" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <p>Proin a velit aliquam vitae malesuada rutrum. Proin a velit aliquam vitae malesuada rutrum.
-                                Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam
-                                vitae. Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper</p>
-                            </div>
-                            <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" data-x="502" data-y="492"
-                            data-speed="1000" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">Donate Now</a>
+                            
                         </div>
                         <img src="<?= base_url()?>assets/img/4.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
                     </li>
                     <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
+                           <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>We need your help</strong>
+                                <strong>Hazte la prueba</strong>
                             </h2>
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Let’s Stop This Hunger and
-                                <br />Fullfill Their Happiness</strong>
-                            </h2>
-                            <div class="tp-caption tp-resizeme lfr skewtoright description white" data-x="502" data-y="395"
-                            data-speed="1000" data-start="1900" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <p>Proin a velit aliquam vitae malesuada rutrum. Proin a velit aliquam vitae malesuada rutrum.
-                                Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam
-                                vitae. Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper</p>
-                            </div>
-                            <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" data-x="502" data-y="492"
-                            data-speed="1000" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">Donate Now</a>
+                            
                         </div>
                         <img src="<?= base_url()?>assets/img/5.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
@@ -143,24 +89,13 @@
                             <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>We need your help</strong>
+                                <strong>Labor Social</strong>
                             </h2>
                             <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
                             data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>Let’s Stop This Hunger and
-                                <br />Fullfill Their Happiness</strong>
+                                <strong>Y Humanitaria</strong>
                             </h2>
-                            <div class="tp-caption tp-resizeme lfr skewtoright description white" data-x="502" data-y="395"
-                            data-speed="1000" data-start="1900" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <p>Proin a velit aliquam vitae malesuada rutrum. Proin a velit aliquam vitae malesuada rutrum.
-                                Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam
-                                vitae. Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper</p>
-                            </div>
-                            <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" data-x="502" data-y="492"
-                            data-speed="1000" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">Donate Now</a>
                         </div>
                         <img src="<?= base_url()?>assets/img/foto6.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
@@ -170,24 +105,13 @@
                             <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>We need your help</strong>
+                                <strong>Derechos de</strong>
                             </h2>
                             <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
                             data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>Let’s Stop This Hunger and
-                                <br />Fullfill Their Happiness</strong>
+                                <strong>Los jovenes</strong>
                             </h2>
-                            <div class="tp-caption tp-resizeme lfr skewtoright description white" data-x="502" data-y="395"
-                            data-speed="1000" data-start="1900" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <p>Proin a velit aliquam vitae malesuada rutrum. Proin a velit aliquam vitae malesuada rutrum.
-                                Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam
-                                vitae. Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper</p>
-                            </div>
-                            <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" data-x="502" data-y="492"
-                            data-speed="1000" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">Donate Now</a>
                         </div>
                         <img src="<?= base_url()?>assets/img/7.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
@@ -211,26 +135,26 @@
                                 <!-- Bakery block -->
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInLeft">
                                     <!-- icon -->
-                                    <i class="icon-cake2 medium fill-icon fa-3x icons-circle border-color"></i>
+                                    <i class="icon-heart2   medium fill-icon fa-3x icons-circle border-color"></i>
                                     <h5>Acerca de nosotros.</h5>
                                 </div>
                                 <!-- Bakery block -->
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInUp">
                                     <!-- icon -->
                                     <!-- icon -->
-                                    <i class="icon-drink6 medium fill-icon fa-3x icons-circle border-color"></i>
+                                    <i class="icon-speaker medium fill-icon fa-3x icons-circle border-color"></i>
                                     <h5>Descarga de información</h5>
                                     
                                 </div>
                                 <!-- Bakery block -->
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInRight">
                                     <!-- icon -->
-                                    <i class="icon-icecream medium fill-icon fa-3x icons-circle border-color"></i>
+                                    <i class="icon-user medium fill-icon fa-3x icons-circle border-color"></i>
                                     <h5>Responde nuestro Test</h5>
                                 </div>
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInRight">
                                     <!-- icon -->
-                                    <i class="icon-icecream medium fill-icon fa-3x icons-circle border-color"></i>
+                                    <i class="icon-camera medium fill-icon fa-3x icons-circle border-color"></i>
                                     <h5>Galeria de Fotos</h5>
                                 </div>
                             </div>
@@ -286,39 +210,43 @@
                                 <div class="item pad-10">
                                     <div class="desc-border bottom-arrow">
                                         <blockquote class="small-text text-center">
-                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. 
+                                            "Cualquier forma de violencia hacia mi persona afecta el disfrute plenno de mi sexualidad." 
+"Tengo derecho a la libertad, a la seguridad jurídica y a la ingegridad física y psicológica." 
                                         </blockquote>
                                     </div>
                                     <div class="client-details text-center">
                                         <div class="client-details">
                                             <!-- Name -->
-                                            <strong class="text-color">John Doe</strong>
+                                            <strong class="text-color">6.- DERECHO A VIVIR LIBRE DE VIOLENCIA SEXUAL</strong>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item pad-10">
                                     <div class="desc-border bottom-arrow">
                                         <blockquote class="small-text text-center">
-                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. 
+                                           "Existen varios tipos de familias, uniones y convivencia social." 
+"Tengo derecho a decidir libremente con quién compartir mi vida, mi sexualidad, mis emociones y afectos." 
                                         </blockquote>
                                     </div>
                                     <div class="client-details text-center">
                                         <div class="client-details">
                                             <!-- Name -->
-                                            <strong class="text-color">John Doe</strong>
+                                            <strong class="text-color">4.- DERECHO A DECIDIR CON QUIÉN COMPARTIR MI VIDA Y MI SEXUALIDAD.
+</strong>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item pad-10">
                                     <div class="desc-border bottom-arrow">
                                         <blockquote class="small-text text-center">
-                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste. 
+                                            "Existen diversas formas de vivir la sexualidad." 
+"Tengo derecho a que se respeten las desiciones que tomo sobre mi cuerpo y mi sexualidad."
                                         </blockquote>
                                     </div>
                                     <div class="client-details text-center">
                                         <div class="client-details">
                                             <!-- Name -->
-                                            <strong class="text-color">John Doe</strong>
+                                            <strong class="text-color">1.- DERECHO A DECIDIR DE FORMA LIBRE SOBRE MI CUERPO.</strong>
                                         </div>
                                     </div>
                                 </div>
