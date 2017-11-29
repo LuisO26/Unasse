@@ -50,7 +50,7 @@
                                     <div id="mision" class="tab-pane fade active in">
                                         <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
                                             <div class="row">
-                                                <p>Nuestra filosofía de trabajo se basa en una conceptualización holística e integral de los seres humanos y humanas, con un enfoque en la autodeterminación y en la idea de un desarrollo sustentable.</p>
+                                                <p>La misión de UNASSE es promover una sociedad más justa e igualitaria que contribuya al desarrollo de los grupos menos representados en la sociedad.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -64,7 +64,7 @@
                                     <div id="filosofia" class="tab-pane fade ">
                                         <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
                                             <div class="row">
-                                                <p>Nuestra visión es ser un referente a nivel nacional e internacional, con modelos exitosos de educación, atención, prevención e incidencia política en derechos sexuales y reproductivos, salud sexual y reproductiva y violencia de género.</p>
+                                                <p>Nuestra filosofía de trabajo se basa en una conceptualización holística e integral de los seres humanos y humanas, con un enfoque en la autodeterminación y en la idea de un desarrollo sustentable.</p>
                                             </div>
                                         </div>
                                     </div>

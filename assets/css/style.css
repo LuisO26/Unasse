@@ -1232,13 +1232,13 @@ i.fa-1x{
 
 /* Overlay */
 .overlay {
-    background:#000;
+    background:#884abf;
     height: 100%;
 	position:absolute;
 	top:0;
 	left:0;
 	right:0;
-    opacity: 0.4;
+    opacity: 0.8;
     width: 100%;
 }
 .image-bg .overlay {

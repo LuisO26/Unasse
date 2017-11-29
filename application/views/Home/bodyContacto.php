@@ -3,186 +3,82 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-pad-20 bottom-pad-20 text-left white">
-                        <h3 class="text-uppercase inline-block tb-margin-20" data-animation="fadeInUp">Galería</h3>
+                        <h3 class="text-uppercase inline-block tb-margin-20" data-animation="fadeInUp">Contacto </h3>
                         
                     </div>
                 </div>
             </div>
         </section>
-        <section id="works" class="page-section">
-            <div class="image-bg content-in fixed" data-background="img/sections/bg/bg-13.jpg">
-                <div class="overlay"></div>
-            </div>
-            <div class="container work-section">
-                
-                <div id="options" class="filter-menu" data-animation="fadeInUp">
-                    <ul class="option-set nav nav-pills">
-                        <li class="filter active" data-filter="all">Todos</li>
-                        <li class="filter" data-filter=".web">Talleres</li>
-                        <li class="filter" data-filter=".html">Seminarios</li>
-                        <li class="filter" data-filter=".wp">Condon Trici</li>
-                        <li class="filter" data-filter=".wp">Ferias y eventos</li>
-                        <li class="filter" data-filter=".wp">Actividades UNASSE</li>
-                        <li class="filter" data-filter=".wp">Jovenes creando</li>
-                        <li class="filter" data-filter=".wp">Ferias ONG'S</li>
-                        <li class="filter" data-filter=".wp">Varios</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- filter -->
-            <div id="mix-container" class="portfolio-grid" data-animation="fadeInUp">
-                <!-- Item 1 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web">
-                    <div class="grid">
-                        <img src="img/sections/wedding-1.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <section id="contact-us" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 contact-info">
+                            <div class="row text-center">
+                                <address class="col-sm-4 col-md-4">
+                                    <i class="fa fa-map-marker i-9x icons-circle text-color light-bg hover-black"></i>
+                                    <div class="title">Dirección</div>
+                                    49 Archdale, 2B Charleston, New York City, USA
+                                </address>
+                                <address class="col-sm-4 col-md-4">
+                                    <i class="fa fa-microphone i-9x icons-circle text-color light-bg hover-black"></i>
+                                    <div class="title">Teléfono</div>
+                                    <div>Support: +123 (345) 6789</div>
+                                </address>
+                                <address class="col-sm-4 col-md-4">
+                                    <i class="fa fa-envelope i-9x icons-circle text-color light-bg hover-black"></i>
+                                    <div class="title">Correo Electronico</div>
+                                    <div>Support: <a href="mailto:support@example.com">support@example.com</a></div>
+                                </address>
+                            </div>
+                            <hr>
+                            <h4>Envianos un mensaje y en breve nos pondremos en contacto contigo </h4>
+                            <br />
                         </div>
-                        <!-- Image Popup-->
-                        <a href="img/sections/wedding-1.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
+                    <p class="form-message" style="display: none;"></p>
+                    <div class="contact-form">
+                        <!-- Form Begins -->
+                        <form role="form" name="contactform" id="contactform" method="post" action="php/contact-form.php">
+                                <div class="col-md-6">
+                                    <!-- Field 1 -->
+                                    <div class="input-text form-group">
+                                        <input type="text" name="contact_name" class="input-name form-control" placeholder="Nombre Completo..." />
+                                    </div>
+                                    <!-- Field 2 -->
+                                    <div class="input-email form-group">
+                                        <input type="email" name="contact_email" class="input-email form-control" placeholder="Correo..."/>
+                                    </div>
+                                    <!-- Field 3 -->
+                                    <div class="input-email form-group">
+                                        <input type="text" name="contact_phone" class="input-phone form-control" placeholder="Teléfono..."/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Field 4 -->
+                                    <div class="textarea-message form-group">
+                                        <textarea name="contact_message" class="textarea-message height-82 form-control" placeholder="Escribas su mensaje..." rows="2" ></textarea>
+                                    </div>
+                                    <!-- Button -->
+                                    <button class="btn btn-default btn-block" type="submit">Enviar<i class="icon-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Form Ends -->
                     </div>
                 </div>
-                <!-- Item 1 Ends-->
-                <!-- Item 2 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web">
-                    <div class="grid">
-                        <img src="img/sections/wedding-2.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="img/sections/wedding-2.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
+            </section><!-- page-section -->
+            <section id="map">
+                <div class="map-section">
+                    <div class="map-canvas"
+                        data-zoom="12"
+                        data-lat="-35.2835"
+                        data-lng="149.128"            
+                        data-type="roadmap"
+                        data-hue="#ffc400"
+                        data-title="Austin"
+                        data-content="Company Name<br>
+                        Contact: +012 (345) 6789<br>
+                        <a href='mailto:info@youremail.com'>info@youremail.com</a>"                         
+                        style="height: 376px;">
                     </div>
                 </div>
-                <!-- Item 2 Ends-->
-                <!-- Item 3 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web">
-                    <div class="grid">
-                        <img src="img/sections/wedding-5.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="img/sections/wedding-5.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 3 Ends-->
-                <!-- Item 4 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all html">
-                    <div class="grid">
-                        <img src="img/sections/estate-2.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="img/sections/estate-2.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 4 Ends-->
-                <!-- Item 5 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all wp web">
-                    <div class="grid">
-                        <img src="img/sections/wedding-3.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="img/sections/wedding-3.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 5 Ends-->
-                <!-- Item 6 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all html wp">
-                    <div class="grid">
-                        <img src="img/sections/food-7.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="img/sections/food-7.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 6 Ends-->
-                <!-- Item 7 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web wp">
-                    <div class="grid">
-                        <img src="img/sections/food-3.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="img/sections/food-3.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 7 Ends-->
-                <!-- Item 8 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web">
-                    <div class="grid">
-                        <img src="img/sections/child-2.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="img/sections/child-2.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 8 Ends-->
-            </div>
-            <!-- Mix Container -->
-        </section>
+            </section> <!-- map -->

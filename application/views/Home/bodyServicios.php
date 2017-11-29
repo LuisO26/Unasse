@@ -26,7 +26,7 @@
                                     </div>
                                     <div class="timeline-panel ">
                                         <div class="timeline-heading">
-                                            <h4 class="subheading">Psicologia</h4>
+                                            <h4 class="subheading">Psicología</h4>
                                         </div>
                                         <div class="timeline-body" data-animation="fadeInLeft">
                                             <p class="text-muted">Brindar asesoría psicológica a bajos costos a la población en general, incluyendo a niños, niñas y adolescentes con problemas emocionales y conductuales así como atención especializada a personas víctimas de abuso sexual y/o violencia intrafamiliar.</p>

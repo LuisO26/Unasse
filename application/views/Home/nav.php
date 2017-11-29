@@ -26,27 +26,27 @@
                                             
                                         </li>
                                         <li class="">
-                                            <a href="<?=base_url()?>/index.php/Home/Galeria">Galería</a>
+                                            <a href="<?=base_url()?>index.php/Home/Galeria">Galería</a>
                                             
                                         </li>
                                         <li>
                                         <a href="#">¿Quienes somos?</a> 
                                         <ul class="dropdown-menu">
                                                 <li>
-                                                <a href="<?=base_url()?>/index.php/Home/Nosotros">Nosotros</a>
+                                                <a href="<?=base_url()?>index.php/Home/Nosotros">Nosotros</a>
                                                 </li>
                                                 <li>
-                                                <a href="<?=base_url()?>/index.php/Home/Servicios">Servicios</a>
+                                                <a href="<?=base_url()?>index.php/Home/Servicios">Servicios</a>
                                                 </li>
                                             </ul>
                                         <li>
-                                        <a href="<?=base_url()?>/index.php/Home/Descargas">Descargas</a> 
+                                        <a href="<?=base_url()?>index.php/Home/Descargas">Descargas</a> 
                                     </li>
                                         <li>
-                                        <a href="<?=base_url()?>/index.php/Home/Pruebas">Pruebas</a> 
+                                        <a href="<?=base_url()?>index.php/Home/Pruebas">Pruebas</a> 
                                         
                                         <li>
-                                        <a href="<?=base_url()?>/index.php/Home/Contacto">Contacto</a> 
+                                        <a href="<?=base_url()?>index.php/Home/Contacto">Contacto</a> 
                                         </li>
                                         <li class="hidden-767">
                                             <a href="#" class="header-contact">
