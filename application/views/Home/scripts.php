@@ -1,5 +1,6 @@
 <!-- Scripts -->
 <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.min.js"></script> 
+
 <script type="text/javascript">
     $("#submit1").on('click', function(){
 
@@ -11,8 +12,6 @@
             $.ajax({
                 url: '<?= base_url()?>index.php/Admin/iniciar_sesion', // url where to submit the request
                 type : "POST", // type of action POST || GET
-                dataType: 'json',
-                contentType: 'application/json; charset=utf-8',
                 data : { correo: $('#correo').val(),
                 contrasena: $("#contrasena").val()},
                 //$("#form").serialize(), // post data || get data
@@ -23,6 +22,7 @@
                     if(result.status == true) {
                      // $(".alert-success").show();
                        //$this.button('reset');
+                       window.location.href("<?= base_url()?>index.php/Admin/logeado");
                     }
                 },
                 error: function(xhr, resp, text) {
@@ -72,6 +72,7 @@
     <!-- Fun Factor / Counter -->
      
     <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.countTo.js"></script> 
+    <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.easypiechart.min.js"></script> 
     <!-- Twitter Feed -->
     <!-- Background Video -->
      
