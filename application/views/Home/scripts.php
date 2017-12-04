@@ -19,10 +19,54 @@
                     // you can see the result from the console
                     // tab of the developer tools
                     console.log(result);
+                    window.location.reload();
                     if(result.status == true) {
                      // $(".alert-success").show();
                        //$this.button('reset');
-                       window.location.href("<?= base_url()?>index.php/Admin/logeado");
+                       
+                    }
+                },
+                error: function(xhr, resp, text) {
+                    //$(".alert-warning").show();
+                    //$this.button('reset');
+                    console.log(xhr, resp, text);
+                }
+            });
+        });
+    $("#submitAdd").on('click', function(){
+
+    //var $this = $('.btns');
+    //$this.button('loading');
+    
+            var url =  $('#url').val();
+             var fdata = new FormData()
+    
+   fdata.append("titulo",$("titulo").val());
+   fdata.append("descripcion",$("descripcion").val());
+   $.each($('#file')[0].files, function(i, file) {
+    fdata.append('file-'+i, file);
+});
+       console.log(fdata)
+            $.ajax({
+                url: '<?= base_url()?>GaleriaAdmin/Agregar', // url where to submit the request
+                type : "POST", // type of action POST || GET
+                data :  fdata, // post data || get data
+                contentType: false,
+                processData: false,
+                success : function(result) {
+                    // you can see the result from the console
+                    // tab of the developer tools
+                    var obj = $.parseJSON(result);
+                    console.log(obj.status);
+                    if(obj.status == 200) {
+                      $(".alert-success").show();
+                       //$this.button('reset');
+                       
+                    }
+                    if(result.status == 300) {
+                      $(".alert-danger").show();
+                       //$this.button('reset');
+                       
                     }
                 },
                 error: function(xhr, resp, text) {

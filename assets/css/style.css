@@ -220,6 +220,9 @@ ul.list-style li{
     margin: 0 0 22px;
     padding: 0 0 0 60px;
 }
+.dnone{
+	display: none;
+}
 
 .arrow-style li{
 	list-style: outside none none;

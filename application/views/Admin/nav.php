@@ -29,21 +29,18 @@
                                         <a href="#">Secciones</a> 
                                         <ul class="dropdown-menu">
                                                 <li>
-                                                <a href="<?=base_url()?>index.php/Home/Nosotros">Descargas</a>
+                                                <a href="<?=base_url()?>index.php/DescargasAdmin">Descargas</a>
                                                 </li>
                                                 <li>
-                                                <a href="<?=base_url()?>index.php/Home/Servicios">Galería</a>
+                                                <a href="<?=base_url()?>index.php/GaleriaAdmin">Galería</a>
                                                 </li>
                                                 <li>
-                                                <a href="<?=base_url()?>index.php/Home/Servicios">Pruebas</a>
-                                                </li>
-                                                <li>
-                                                <a href="<?=base_url()?>index.php/Home/Servicios">Pruebas</a>
+                                                <a href="<?=base_url()?>index.php/PruebasAdmin">Pruebas</a>
                                                 </li>
                                             </ul>
                                         <li>
                                         <li>
-                                        <a href="#">Micro Sitios</a> 
+                                        <a href="<?=base_url()?>index.php/Micrositios">Micro Sitios</a> 
                                         <li>
                                     </ul>
                                         

@@ -24,10 +24,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 if( isset($_SERVER['HTTPS'] ) ) {
-	$config['base_url'] = 'https://' . $_SERVER['SERVER_NAME'] . '/Unasse';
+	$config['base_url'] = 'https://' . $_SERVER['SERVER_NAME'] . '/japay';
 } else{
-	$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . '/Unasse';
+	$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . '/japay';
 }
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -327,7 +328,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '12010051aA-';
 
 /*
 |--------------------------------------------------------------------------
@@ -382,7 +383,7 @@ $config['encryption_key'] = '';
 */
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
-$config['sess_expiration'] = 7200;
+$config['sess_expiration'] = 691200;
 $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;

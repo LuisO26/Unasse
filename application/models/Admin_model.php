@@ -14,6 +14,10 @@
    }
    public function Save($data){
 
+      $this->db->insert($data['tabla'],$data['tabla'] );
+   }
+   public function SaveImages($data){
+
       $this->db->insert($data['tabla'],array('titulo'=>$data['titulo'], 'descripcion'=>$data['descripcion'], 'fecha'=>date('Y-m-d')));
    }
 }
