@@ -1118,7 +1118,7 @@ $(document).ready(function() {
 	
 	Placeholder for Image
 	-------------------------------------------- */	
-$(window).load(function(){
+/*$(window).load(function(){
 		
 	$('img:not(".site_logo")').each(function() {
 		if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){
@@ -1154,7 +1154,7 @@ $(window).load(function(){
 			$(this).css("background-image", "url(" + "http://placehold.it/1900x700/2e2e2e/666.jpg" + ")");
 		}
 	});
-});
+});*/
 
 /* --------------------------------------------
 Google Map

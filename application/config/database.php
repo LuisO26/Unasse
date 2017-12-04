@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'unasse_db',
+	'hostname' => '67.227.237.26',
+	'username' => 'iscluisv_Unasse',
+	'password' => 'dF@j2U%tr1J=',
+	'database' => 'iscluisv_unasse_db',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => TRUE,

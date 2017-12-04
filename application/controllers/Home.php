@@ -20,7 +20,8 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('Home/header');
+		$data = array( "header" => "Inicio");
+		$this->load->view('Home/header', $data);
 		$this->load->view('Home/nav');
 		$this->load->view('Home/body');
 		$this->load->view('Home/footer');
@@ -28,9 +29,55 @@ class Home extends CI_Controller {
 	}
 	public function Galeria()
 	{
-		$this->load->view('Home/header');
+		$data = array( "header" => "Galeria");
+		$this->load->view('Home/header', $data);
 		$this->load->view('Home/nav');
 		$this->load->view('Home/bodyGaleria');
+		$this->load->view('Home/footer');
+		$this->load->view('Home/scripts');
+	}
+	public function Nosotros()
+	{
+		$data = array( "header" => "Nosotros");
+		$this->load->view('Home/header', $data);
+		$this->load->view('Home/nav');
+		$this->load->view('Home/bodyNosotros');
+		$this->load->view('Home/footer');
+		$this->load->view('Home/scripts');
+	}
+	public function Servicios()
+	{
+		$data = array( "header" => "Servicios");
+		$this->load->view('Home/header', $data);
+		$this->load->view('Home/nav');
+		$this->load->view('Home/bodyServicios');
+		$this->load->view('Home/footer');
+		$this->load->view('Home/scripts');
+	}
+	public function Pruebas()
+	{
+		$data = array( "header" => "Pruebas");
+		$this->load->view('Home/header', $data);
+		$this->load->view('Home/nav');
+		$this->load->view('Home/bodyPruebas');
+		$this->load->view('Home/footer');
+		$this->load->view('Home/scripts');
+	}
+	public function Contacto()
+	{
+		$data = array( "header" => "Contacto");
+		$this->load->view('Home/header', $data);
+		$this->load->view('Home/nav');
+		$this->load->view('Home/bodyContacto');
+		$this->load->view('Home/footer');
+		$this->load->view('Home/scripts');
+	}
+	public function Descargas()
+	{
+		$data = array( "header" => "Descargas");
+		$this->load->view('Home/header', $data);
+		$this->load->view('Home/nav');
+		$this->load->view('Home/bodyDescargas');
 		$this->load->view('Home/footer');
 		$this->load->view('Home/scripts');
 	}
