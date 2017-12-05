@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Pie Charts &amp; Skills \ Mist — Responsive Multi-purpose HTML Template</title>
+        <title>Admin - <?= $header ?></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="keywords" content="HTML5 Template" />
         <meta name="description" content="Mist — Multi-Purpose HTML Template" />

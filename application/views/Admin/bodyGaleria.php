@@ -11,7 +11,7 @@
 	</div>
 
 	<div class="container">
-		<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+		<a class="btn btn-primary" id="btnnuevo" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 				  Nuevo
 				</a>
 				<div class="collapse" id="collapseExample">
@@ -37,6 +37,7 @@
 	</div>
             <div class="container">
 	<table class="table table-striped">
+
 					  <thead>
 						<tr>
 						  <th>#</th>
@@ -47,27 +48,18 @@
 						</tr>
 					  </thead>
 					  <tbody>
-						<tr>
+					  	<?php 
+							foreach ($datag[0] -> result() as $gale) { ?>
+							<tr>
 						  <th scope="row">1</th>
-						  <td>Mark</td>
-						  <td>Otto</td>
-						  <td>@mdo</td>
-						  <td>@twitter</td>
+						  <td><?= $gale->titulo;?></td>
+						  <td><?= $gale->descripcion;?></td>
+						  <td><?= $gale->fecha;?></td>
+						  <td><a href="#">borrar</a></td>
 						</tr>
-						<tr>
-						  <th scope="row">2</th>
-						  <td>Jacob</td>
-						  <td>Thornton</td>
-						  <td>@fat</td>
-						  <td>@twitter</td>
-						</tr>
-						<tr>
-						  <th scope="row">3</th>
-						  <td>Larry</td>
-						  <td>the Bird</td>
-						  <td>@twitter</td>
-						  <td>@twitter</td>
-						</tr>
+											
+											<?php } ?>
+						
 					  </tbody>
 					</table>
 </div>

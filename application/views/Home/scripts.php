@@ -41,8 +41,8 @@
             var url =  $('#url').val();
              var fdata = new FormData()
     
-   fdata.append("titulo",$("titulo").val());
-   fdata.append("descripcion",$("descripcion").val());
+   fdata.append("titulo",$("#titulo").val());
+   fdata.append("descripcion",$("#descripcion").val());
    $.each($('#file')[0].files, function(i, file) {
     fdata.append('file-'+i, file);
 });
@@ -60,6 +60,12 @@
                     console.log(obj.status);
                     if(obj.status == 200) {
                       $(".alert-success").show();
+                      $("#btnnuevo").attr('class','btn btn-primary collapsed');
+                      $("#btnnuevo").attr('aria-expanded','false');
+                      $("#collapseExample").attr('aria-expanded','false');
+                      $("#collapseExample").attr('class','collapse');
+                      //$("#collapseExample").attr('style','height: 0px; display:none; ');
+                       $("#form")[0].reset();
                        //$this.button('reset');
                        
                     }

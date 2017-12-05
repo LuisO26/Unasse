@@ -9,13 +9,15 @@ class GaleriaAdmin extends CI_Controller {
 	public function index()
 	{
 		if($this->session->userdata('logueado')){
+			$datosg = $this->Admin_model->getGalerias();
          $data = array();
          $data['nombre'] = $this->session->userdata('nombre');
+         $data['datosg'] = $datosg;
       $data1 = array( "header" => "Inicio", 
       	"url" => 'GaleriaAdmin/Agregar');
 		$this->load->view('Admin/header', $data1);
-		$this->load->view('Admin/nav');
-		$this->load->view('Admin/bodyGaleria');
+		$this->load->view('Admin/nav', $data);
+		$this->load->view('Admin/bodyGaleria', $data);
 		$this->load->view('Home/scripts');
       }else{
       	$data1 = array( "header" => "Inicio");
@@ -28,6 +30,17 @@ class GaleriaAdmin extends CI_Controller {
 	}
 	public function Agregar(){
 		$res='';
+		if ($_POST) {
+			$data= array('tabla'=> "galeria", 'datos'=> array('titulo' => $_POST['titulo'],
+				'descripcion' => $_POST['descripcion'] ,
+				'fecha' => date('Y-m-d')));
+			
+			$id_galeria = $this->Admin_model->Save($data);
+			
+			# code...
+		} else {
+			# code...
+		}
 		//print_r($files);
 		$count = count($_FILES);
 		$config['upload_path']          = './././assets/img/galeria';
@@ -48,8 +61,15 @@ class GaleriaAdmin extends CI_Controller {
                 else
                 {
                         $res = array('upload_data' => $this->upload->data());
+                 
 
                         //$this->load->view('upload_success', $data);
+                        $data = array('tabla'=> "imagenes", 'datos'=> array('nombre' => $res['upload_data']['file_name'] ,
+				'url' => 'assets/img/galeria/'.$res['upload_data']['file_name'],
+				'id_galeria'=> $id_galeria));
+                        $galeria = $this->Admin_model->SaveImages($data);
+                        
+			
                         
                 }
     }
@@ -68,26 +88,7 @@ class GaleriaAdmin extends CI_Controller {
                 
 		
                 
-		/*if ($this->input->post()) {
-			$data['tabla']= "galeria";
-			$data['datos']= array(
-				'titulo' => $this->input->post('titulo') ,
-				'descripcion' => $this->input->post('descripcion') ,
-				'fecha' => date('Y-m-d')
-				 );
-			$galeria = $this->Admin_model->Save($data);
-			$data['tabla']= "imagenes";
-			$data['datos']= array(
-				'nombre' => $this->input->post('titulo') ,
-				'url' => 'assets/img/galeria/'+$res['file_name'] 
-				 );
-			# code...
-			$imagenes = $this->Admin_model->SaveImages($data);
-			 $result = array("status" => true);
-            echo json_encode($result);
-		} else {
-			# code...
-		}*/
+		
 		
 	}
 }
