@@ -24,6 +24,7 @@
    }
    public function getGalerias(){
       $query1 = $this->db->get('galeria');
+      // hola
       $this->db->select('*');
       $this->db->from('imagenes');
       $this->db->join('galeria', 'galeria.id = imagenes.id_galeria');
