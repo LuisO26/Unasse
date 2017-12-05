@@ -29,10 +29,23 @@ class Home extends CI_Controller {
 	}
 	public function Galeria()
 	{
+		$i = 0;
+		$datosg = $this->Admin_model->getGalerias();
+		foreach ($datosg as $ds) {
+			# code...
+			$imagenes[$i] = $this->Admin_model->getImagesById($ds->id);
+			
+			$i += 1;
+		}
+         //$data = array();
+         //$data['nombre'] = $this->session->userdata('nombre');
+         $data1['datosg'] = $datosg;
+         var_dump($imagenes);
+         $data1['imagenes'] = $imagenes;
 		$data = array( "header" => "Galeria");
 		$this->load->view('Home/header', $data);
 		$this->load->view('Home/nav');
-		$this->load->view('Home/bodyGaleria');
+		$this->load->view('Home/bodyGaleria',$data1);
 		$this->load->view('Home/footer');
 		$this->load->view('Home/scripts');
 	}

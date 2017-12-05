@@ -49,18 +49,19 @@
 					  </thead>
 					  <tbody>
 					  	<?php 
-					  	$i =0;
-					  	var_dump($datag);
-							foreach ($datag[0][$i] as $gale) { ?>
+					  	$i = 0; 
+							foreach ($datosg as $gale) {
+								$i += 1; 
+								?>
 							<tr>
-						  <th scope="row">1</th>
+						  <th scope="row"><?= $i?></th>
 						  <td><?= $gale->titulo;?></td>
 						  <td><?= $gale->descripcion;?></td>
 						  <td><?= $gale->fecha;?></td>
 						  <td><a href="#">borrar</a></td>
 						</tr>
 											
-											<?php $i= $i+1; 
+											<?php  
 										} ?>
 						
 					  </tbody>

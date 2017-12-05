@@ -9,184 +9,38 @@
                 </div>
             </div>
         </section>
-        <section id="works" class="page-section">
-<<<<<<< HEAD
-            <div class="image-bg content-in fixed" data-background="<?= base_url()?>img/fondog.jpg">
-=======
-            <div class=" content-in fixed" data-background="img/sections/bg/bg-13.jpg">
->>>>>>> windows
-                <div class="overlay"></div>
+        <section id="service" class="page-section">
+            <div class="container">
+                <div class="section-title">
+                    <!-- Heading -->
+                    <h2 class="title">Conoce nuestra galería de fotos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row text-center">
+                            <?php 
+                        $i = 0; 
+                            foreach ($datosg as $gale) {
+                                $i += 1; 
+                                ?>
+                                <div class="col-sm-4">
+                                <p class="text-center">
+                                    <a href="<?= base_url()?><?=$imagenes[$i-1]['url']?>" class="opacity" data-rel="prettyPhoto[portfolio]">
+                                        <img src="<?= base_url()?><?=$imagenes[$i-1]['url']?>" width="370" height="185" alt="" />
+                                    </a>
+                                </p>
+                                <h5 class="bottom-margin-10">
+                                    <a href="#" class="black"><?=$gale->titulo ?></a>
+                                </h5>
+                                <p><?=$gale->descripcion ?></p>
+                            </div>
+                                            
+                                            <?php  
+                                        } ?>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container work-section">
-                
-                <div id="options" class="filter-menu" data-animation="fadeInUp">
-                    <ul class="option-set nav nav-pills">
-                        <li class="filter active" data-filter="all">Todos</li>
-                        <li class="filter" data-filter=".web">Talleres</li>
-                        <li class="filter" data-filter=".html">Seminarios</li>
-                        <li class="filter" data-filter=".wp">Condon Trici</li>
-                        <li class="filter" data-filter=".wp">Ferias y eventos</li>
-                        <li class="filter" data-filter=".wp">Actividades UNASSE</li>
-                        <li class="filter" data-filter=".wp">Jovenes creando</li>
-                        <li class="filter" data-filter=".wp">Ferias ONG'S</li>
-                        <li class="filter" data-filter=".wp">Varios</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- filter -->
-            <div id="mix-container" class="portfolio-grid" data-animation="fadeInUp">
-                <!-- Item 1 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web">
-                    <div class="grid">
-                        <img src="<?= base_url()?>assets/img/flowers.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="<?= base_url()?>assets/img/flowers.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 1 Ends-->
-                <!-- Item 2 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web">
-                    <div class="grid">
-                        <img src="<?= base_url()?>assets/img/flowers.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="<?= base_url()?>assets/img/flowers.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 2 Ends-->
-                <!-- Item 3 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web">
-                    <div class="grid">
-                        <img src="<?= base_url()?>assets/img/flowers.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="<?= base_url()?>assets/img/flowers.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 3 Ends-->
-                <!-- Item 4 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all html">
-                    <div class="grid">
-                        <img src="<?= base_url()?>assets/img/flowers.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="<?= base_url()?>assets/img/flowers.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 4 Ends-->
-                <!-- Item 5 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all wp web">
-                    <div class="grid">
-                        <img src="<?= base_url()?>assets/img/flowers.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="<?= base_url()?>assets/img/flowers.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 5 Ends-->
-                <!-- Item 6 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all html wp">
-                    <div class="grid">
-                        <img src="<?= base_url()?>assets/img/flowers.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="<?= base_url()?>assets/img/flowers.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 6 Ends-->
-                <!-- Item 7 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web wp">
-                    <div class="grid">
-                        <img src="<?= base_url()?>assets/img/flowers.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="<?= base_url()?>assets/img/flowers.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 7 Ends-->
-                <!-- Item 8 -->
-                <div class="grids col-xs-12 col-sm-6 col-md-3 mix all web">
-                    <div class="grid">
-                        <img src="<?= base_url()?>assets/img/flowers.jpg" width="400" height="273" alt="Recent Work" class="img-responsive" />
-                        <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <!-- Image Popup-->
-                        <a href="<?= base_url()?>assets/img/flowers.jpg" data-rel="prettyPhoto[portfolio]">
-                            <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
-                    </div>
-                </div>
-                <!-- Item 8 Ends-->
-            </div>
-            <!-- Mix Container -->
         </section>

@@ -24,14 +24,22 @@
    }
    public function getGalerias(){
       $query1 = $this->db->get('galeria');
-      // hola
+      $sql= $query1->result();
+      return $sql;
+
+      
+   }
+   public function getImagesById($data){
       $this->db->select('*');
       $this->db->from('imagenes');
-      $this->db->join('galeria', 'galeria.id = imagenes.id_galeria');
-      $query2 = $this->db->get();
-      $sql[0]= $query1->result();
-      $sql[1]= $query2->result();
-      return $sql;
+      $this->db->where('id_galeria', $data);
+      $query =  $this->db->get();
+       if ( $query->num_rows() > 0 )
+    {
+        $row = $query->row_array();
+        return $row;
+    }
+
 
       
    }

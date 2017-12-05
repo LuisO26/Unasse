@@ -13,12 +13,12 @@ class GaleriaAdmin extends CI_Controller {
          //$data = array();
          //$data['nombre'] = $this->session->userdata('nombre');
          $data['datosg'] = $datosg;
-         var_dump($data);
+         //var_dump($data);
       $data1 = array( "header" => "Inicio", 
       	"url" => 'GaleriaAdmin/Agregar');
 		$this->load->view('Admin/header', $data1);
 		$this->load->view('Admin/nav');
-		$this->load->view('Admin/bodyGaleria', $data[0]);
+		$this->load->view('Admin/bodyGaleria', $data);
 		$this->load->view('Home/scripts');
       }else{
       	$data1 = array( "header" => "Inicio");
