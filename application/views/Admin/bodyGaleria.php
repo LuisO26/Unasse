@@ -49,7 +49,9 @@
 					  </thead>
 					  <tbody>
 					  	<?php 
-							foreach ($datag[0] -> result() as $gale) { ?>
+					  	$i =0;
+					  	var_dump($datag);
+							foreach ($datag[0][$i] as $gale) { ?>
 							<tr>
 						  <th scope="row">1</th>
 						  <td><?= $gale->titulo;?></td>
@@ -58,7 +60,8 @@
 						  <td><a href="#">borrar</a></td>
 						</tr>
 											
-											<?php } ?>
+											<?php $i= $i+1; 
+										} ?>
 						
 					  </tbody>
 					</table>

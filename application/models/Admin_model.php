@@ -23,12 +23,14 @@
       $this->db->insert($data['tabla'],$data['datos'] );
    }
    public function getGalerias(){
-      $query[0] = $this->db->get('galeria');
+      $query1 = $this->db->get('galeria');
       $this->db->select('*');
       $this->db->from('imagenes');
       $this->db->join('galeria', 'galeria.id = imagenes.id_galeria');
-      $query[1] = $this->db->get();
-      return $query;
+      $query2 = $this->db->get();
+      $sql[0]= $query1->result();
+      $sql[1]= $query2->result();
+      return $sql;
 
       
    }
