@@ -43,6 +43,18 @@
 
       
    }
+   public function getImagenesById($data){
+      $this->db->select('*');
+      $this->db->from('imagenes');
+      $this->db->where('id_galeria', $data);
+      $query =  $this->db->get();
+       
+        $row = $query->result();
+        return $row;
+
+
+      
+   }
 
 }
 ?>

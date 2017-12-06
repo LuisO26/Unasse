@@ -127,6 +127,7 @@
     <!-- Background Video -->
      
     <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.mb.YTPlayer.js"></script> 
+    <script type="text/javascript" src="<?= base_url()?>assets/js/isotope.min.js"></script>
     <!-- Custom Js Code -->
      
     <script type="text/javascript" src="<?= base_url()?>assets/js/custom.js"></script> 

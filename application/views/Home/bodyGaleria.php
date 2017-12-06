@@ -25,12 +25,12 @@
                                 ?>
                                 <div class="col-sm-4">
                                 <p class="text-center">
-                                    <a href="<?= base_url()?><?=$imagenes[$i-1]['url']?>" class="opacity" data-rel="prettyPhoto[portfolio]">
-                                        <img src="<?= base_url()?><?=$imagenes[$i-1]['url']?>" width="370" height="185" alt="" />
+                                    <a href="<?= base_url()?>Home/Galeria?id=<?=$gale->id ?>&titulo=<?=$gale->titulo?>" class="opacity" >
+                                        <img src="<?= base_url()?><?=$imagenes[$i-1]['url']?>" style="height: 250px" alt="" />
                                     </a>
                                 </p>
                                 <h5 class="bottom-margin-10">
-                                    <a href="#" class="black"><?=$gale->titulo ?></a>
+                                    <a href="<?= base_url()?>Home/Galeria?id=<?=$gale->id ?>" class="black"><?=$gale->titulo ?></a>
                                 </h5>
                                 <p><?=$gale->descripcion ?></p>
                             </div>
