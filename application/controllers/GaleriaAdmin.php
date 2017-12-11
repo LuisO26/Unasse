@@ -29,6 +29,19 @@ class GaleriaAdmin extends CI_Controller {
    }
 		
 	}
+	public function borrar(){
+      $id= $_POST['id'];
+      $resp = $this->Admin_model->borrarGaleria($id);
+      if ($resp == 'borrado') {
+      	$respuesta  = array('status' => 200 , 'mensaje'=> 'Galeria Borrada' );
+    	echo json_encode($respuesta);
+      }else{
+      	$respuesta  = array('status' => 300 , 'mensaje'=> 'Hubo un problema' );
+    	echo json_encode($respuesta);
+      }
+      
+
+   }
 	public function Agregar(){
 		$res='';
 		if ($_POST) {

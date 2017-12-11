@@ -53,12 +53,13 @@
 							foreach ($datosg as $gale) {
 								$i += 1; 
 								?>
+								<input type="hidden" name="id" id="id" value="<?=$gale->id?>">
 							<tr>
 						  <th scope="row"><?= $i?></th>
 						  <td><?= $gale->titulo;?></td>
 						  <td><?= $gale->descripcion;?></td>
 						  <td><?= $gale->fecha;?></td>
-						  <td><a href="#">borrar</a></td>
+						  <td><center><button style="color:red;" type="button" id="borrar_galeria"><i class="fa fa-trash" aria-hidden="true"></i></button></center></td>
 						</tr>
 											
 											<?php  
@@ -67,4 +68,13 @@
 					  </tbody>
 					</table>
 </div>
+<div style="display: none" class=" alert alert-success alert-dismissible" id="alert-borrar" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Listo!</strong> Galeria Eliminada.
+</div>
+<div style="display: none"  class=" alert alert-danger alert-dismissible" id="alert-borrarmal" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Error!</strong> Problemas al eliminar galeria, intente de nuevo.
+</div>
+	</div>
 </section>

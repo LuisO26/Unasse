@@ -14,17 +14,10 @@
                         <img src="<?= base_url()?>assets/img/galeria/<?=$img->nombre ?>" alt="Recent Work" />
                         <div class="img-overlay"></div>
                         <div class="figcaption">
-                        <div class="caption-block">
-                            <h4>Name Of Work</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
                         <!-- Image Popup-->
                         <a href="<?= base_url()?><?=$img->url ?>" data-rel="prettyPhoto[portfolio]">
                             <i class="fa fa-search"></i>
-                        </a> 
-                        <a href="portfolio-single.html">
-                            <i class="fa fa-link"></i>
-                        </a></div>
+                        </a> </div>
                     </div>
                                             
                                             <?php  

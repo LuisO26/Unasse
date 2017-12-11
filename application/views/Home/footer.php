@@ -23,17 +23,14 @@
                         </center>
                         <div class="col-xs-4  col-sm-4 col-md-4 text-right page-scroll gray-bg icons-circle i-3x">
                             <!-- Goto Top -->
-                            <a href="#page">
+                            <a href="https://www.facebook.com/Unasse-AC-526911124018410/">
                                 <i class="fa fa-facebook-official"></i>
                             </a>
-                            <a href="#page">
+                            <a href="https://twitter.com/unasse_ac">
                                 <i class="fa fa-twitter-square"></i>
                             </a>
-                            <a href="#page">
+                            <a href="https://www.instagram.com/unasse_a.c/">
                                 <i class="fa fa-instagram"></i>
-                            </a>
-                            <a href="#page">
-                                <i class="fa fa-facebook-official"></i>
                             </a>
                         </div>
                     </div>

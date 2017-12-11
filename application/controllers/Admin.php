@@ -25,6 +25,7 @@ class Admin extends CI_Controller {
    }
 		
 	}
+   
 
 	public function iniciar_sesion() {
       if ($this->input->post()) {

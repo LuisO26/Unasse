@@ -27,15 +27,20 @@
 					<label for="descripcion">Descripción</label>
 					<input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Ingrese una pequeña descripción...">
 				  </div>
-				  <button type="button" id="addQuestion"  class="btn btn-default">Agregar Pregunta </button>
+				  <div class="form-group">
+					<label for="exampleInputFile">Ingrese imagenes</label>
+					<input type="file" name="file[]" id="file" multiple>
+				  </div>
 				  <div id="pregunta" >
 				  	
 				  	
 				  </div>
+				  <button type="button" id="addQuestion"  class="btn btn-default">Agregar Pregunta </button>
+				  
 				  
 
 				  
-				  <button type="button" id="submitAdd" data-loading-text="Loading..." class="btn btn-primary">Crear </button>
+				  <center><button type="button" id="submitAdd"  class="btn btn-primary">Crear </button></center>
 				</form>
 				  </div>
 				</div>

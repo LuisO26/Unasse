@@ -16,13 +16,13 @@
                                 <span class="icon-bar"></span> 
                                 <span class="icon-bar"></span></button> 
                                  
-                                <a class="navbar-brand" href="index.html">
+                                <a class="navbar-brand" href="<?=base_url()?>">
                                     <img style="height: 80px; width: auto; " class="site_logo" alt="Site Logo" src="<?= base_url()?>assets/img/logo.png" />
                                 </a></div>
                                 <div class="navbar-collapse collapse" style="padding-top: 10px">
                                     <ul class="nav navbar-nav">
                                         <li class="">
-                                            <a href="<?=base_url()?>">Dashboard</a>
+                                            <a href="<?=base_url()?>Admin">Dashboard</a>
                                             
                                         </li>
                                         <li>

@@ -3,16 +3,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-pad-20 bottom-pad-20 text-center white">
-                        <h3 class="text-uppercase inline-block tb-margin-20" data-animation="fadeInUp">Galería</h3>
+                        <h3 class="text-uppercase inline-block tb-margin-20" data-animation="fadeInUp">Pruebas</h3>
                         
                     </div>
                 </div>
             </div>
         </section>
-        <section id="events" class="page-section">
+        <!--<section id="events" class="page-section">
             <div class="container">
                 <div class="section-title" data-animation="fadeInUp">
-                    <!-- Heading -->
                     <h2 class="title">¡Realiza las diferentes pruebas que tenemos para ti!</h2>
                 </div>
                 <div class="row bottom-pad-30">
@@ -26,7 +25,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id pariatur molestiae illum cum facere
                         deserunt a enim harum eaque fugit.</p>
                         <div class="meta top-pad-10">
-                        <!-- Meta Date -->
                          
                         <span class="time">
                         <i class="fa fa-calendar"></i> 03.11.2015</span> 
@@ -44,7 +42,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id pariatur molestiae illum cum facere
                         deserunt a enim harum eaque fugit.</p>
                         <div class="meta top-pad-10">
-                        <!-- Meta Date -->
                          
                         <span class="time">
                         <i class="fa fa-calendar"></i> 18.11.2015</span> 
@@ -62,7 +59,6 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id pariatur molestiae illum cum facere
                         deserunt a enim harum eaque fugit.</p>
                         <div class="meta top-pad-10">
-                        <!-- Meta Date -->
                          
                         <span class="time">
                         <i class="fa fa-calendar"></i> 04.12.2015</span> 
@@ -73,4 +69,20 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
+        </section> -->
+        <section class="page-section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h3 class="upper">Esta seccion</h3>
+                        <h1 class="upper bg-color">Esta en Mantenimiento</h1>
+                        <h3 class="upper">Pronto podras realizar tu pruebas</h3>
+                        <div class="icon-big">
+                            <i class="fa fa-cog fa-5x rotating text-color"></i>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <!-- .container -->
         </section>

@@ -78,7 +78,7 @@
                                     <!-- Header Contact Content -->
                                     <div style="background-color: #884abf !important" class="bg-white hide-show-content no-display header-contact-content">
                                         <p class="vertically-absolute-middle">Contáctanos 
-                                        <strong>+52 999 9 99 99 99</strong></p>
+                                        <strong>(999) 9-24-30-44</strong></p>
                                         <button class="close">
                                             <i class="fa fa-times"></i>
                                         </button>
@@ -100,20 +100,14 @@
                                     <!-- Header Share Content -->
                                     <div style="background-color: #884abf !important" class="bg-white hide-show-content no-display header-share-content">
                                         <div class="vertically-absolute-middle social-icon gray-bg icons-circle i-3x">
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/Unasse-AC-526911124018410/">
                                             <i class="fa fa-facebook"></i>
                                         </a> 
-                                        <a href="#">
+                                        <a href="https://twitter.com/unasse_ac">
                                             <i class="fa fa-twitter"></i>
                                         </a> 
-                                        <a href="#">
-                                            <i class="fa fa-pinterest"></i>
-                                        </a> 
-                                        <a href="#">
-                                            <i class="fa fa-google"></i>
-                                        </a> 
-                                        <a href="#">
-                                            <i class="fa fa-linkedin"></i>
+                                        <a href="https://www.instagram.com/unasse_a.c/">
+                                            <i class="fa fa-instagram"></i>
                                         </a></div>
                                         <button class="close">
                                             <i class="fa fa-times"></i>

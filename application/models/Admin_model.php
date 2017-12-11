@@ -18,6 +18,26 @@
       $id = $this->db->insert_id();
       return  $id;
    }
+   public function borrarGaleria($data){
+      $this->load->helper("file");
+      $this->db->select('*');
+      $this->db->from('imagenes');
+      $this->db->where('id_galeria', $data);
+      $query =  $this->db->get();
+      $datas = $query->result();
+      foreach ($datas as $row ) {
+        # code...
+        delete_files('./././assets/img/galeria/'.$row->nombre);
+      }
+
+
+$this->db->where('id', $data);
+$this->db->delete('galeria');
+$this->db->where('id_galeria', $data);
+$this->db->delete('imagenes');
+
+      return  'borrado';
+   }
    public function SaveImages($data){
 
       $this->db->insert($data['tabla'],$data['datos'] );
