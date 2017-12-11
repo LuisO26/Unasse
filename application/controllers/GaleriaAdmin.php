@@ -9,7 +9,7 @@ class GaleriaAdmin extends CI_Controller {
 	public function index()
 	{
 		if($this->session->userdata('logueado')){
-			$datosg = $this->Admin_model->getGalerias();
+			$datosg = $this->Admin_model->getData('galeria');
          //$data = array();
          //$data['nombre'] = $this->session->userdata('nombre');
          $data['datosg'] = $datosg;

@@ -2,71 +2,17 @@
 <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.min.js"></script> 
 
 <script type="text/javascript">
-    $("#submit1").on('click', function(){
+var num= 0
+    $("#addQuestion").click(function(){
+        
+        num = num+1
 
-    //var $this = $('.btns');
-    //$this.button('loading');
-    
-      
-            // send ajax
-            $.ajax({
-                url: '<?= base_url()?>index.php/Admin/iniciar_sesion', // url where to submit the request
-                type : "POST", // type of action POST || GET
-                data : { correo: $('#correo').val(),
-                contrasena: $("#contrasena").val()},
-                //$("#form").serialize(), // post data || get data
-                success : function(result) {
-                    // you can see the result from the console
-                    // tab of the developer tools
-                    console.log(result);
+  $("#pregunta").append("<div class='form-group'><label for='pregunta'>Pregunta "+num+"</label><input type='text' class='form-control' name='pregunta_"+num+"' id='pregunta_"+num+"' placeholder='Ingrese pregunta "+num+"...'></div><label for='respuesta'>Respuestas</label><div class='form-group'><div class='col-md-3'><input type='text' class='form-control' name='respuesta1_"+num+"' id='respuesta1_"+num+"' placeholder='Ingrese respuesta 1...'></div><div class='col-md-3'><input type='text' class='form-control' name='respuesta2_"+num+"' id='respuesta2_"+num+"' placeholder='Ingrese respuesta 2...'></div><div class='col-md-3'><input type='text' class='form-control' name='respuesta3_"+num+"' id='respuesta3_"+num+"' placeholder='Ingrese respuesta 3...'></div><div class='col-md-3'><input type='text' class='form-control' name='respuesta4_"+num+"' id='respuesta4_"+num+"' placeholder='Ingrese respuesta 4...'></div></div>");
 
-                    window.location.reload();
-                    if(result.status == true) {
-                     // $(".alert-success").show();
-                       //$this.button('reset');
-                       
-                    }
-                },
-                error: function(xhr, resp, text) {
-                    //$(".alert-warning").show();
-                    //$this.button('reset');
-                    console.log(xhr, resp, text);
-                }
-            });
-        });
-    $(document).ready(function() {
-  
+  $('#cantidadPreguntas').val(num)
 });
-    $("#enviarCorreo").on('click', function(){
-        console.log($( "#formContacto" ).serialize())
-         $.ajax({
-                url: '<?= base_url()?>Home/EnviarMail', // url where to submit the request
-                type : "POST", // type of action POST || GET
-                data :  $( "#formContacto" ).serialize(), // post data || get data
-                success : function(result) {
-                    // you can see the result from the console
-                    // tab of the developer tools
-                    var obj = $.parseJSON(result);
-                    console.log(obj);
-                    if(obj.status == 200) {
-                      $(".alert-success").show();
-                       
-                    }
-                    if(obj.status == 300) {
-                      $(".alert-danger").show();
-                      console.log(result)
-                       //$this.button('reset');
-                       
-                    }
-                },
-                error: function(xhr, resp, text) {
-                    $(".alert-warning").show();
-                    //$this.button('reset');
-                    console.log(xhr, resp, text);
-                }
-            });
+    
 
-    });
     $("#submitAdd").on('click', function(){
 
     //var $this = $('.btns');
@@ -77,9 +23,14 @@
     
    fdata.append("titulo",$("#titulo").val());
    fdata.append("descripcion",$("#descripcion").val());
-   $.each($('#file')[0].files, function(i, file) {
-    fdata.append('file-'+i, file);
-});
+   fdata.append("cantidadPreguntas",$("#cantidadPreguntas").val());
+   for (var i=1 ; i <= num; i++) {
+    fdata.append("pregunta_"+i,$("#pregunta_"+i).val());
+       fdata.append("respuesta1_"+i,$("#respuesta1_"+i).val());
+       fdata.append("respuesta2_",$("#respuesta2_"+i).val());
+       fdata.append("respuesta3_",$("#respuesta3_"+i).val());
+       fdata.append("respuesta4_"+i,$("#respuesta4_"+i).val());
+   }
        console.log(fdata)
 
             $.ajax({

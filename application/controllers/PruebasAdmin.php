@@ -8,14 +8,19 @@ class PruebasAdmin extends CI_Controller {
    }
 	public function index()
 	{
-		if($this->session->userdata('logueado')){
-         $data = array();
-         $data['nombre'] = $this->session->userdata('nombre');
-      $data1 = array( "header" => "Inicio");
+			if($this->session->userdata('logueado')){
+			$datosg = $this->Admin_model->getData('pruebas');
+         //$data = array();
+         //$data['nombre'] = $this->session->userdata('nombre');
+         $data['datosg'] = $datosg;
+         $data['url']= 'PruebasAdmin/Agregar';
+         //var_dump($data);
+      $data1 = array( "header" => "Inicio" 
+      	);
 		$this->load->view('Admin/header', $data1);
 		$this->load->view('Admin/nav');
-		$this->load->view('Admin/bodyGaleria');
-		$this->load->view('Home/scripts');
+		$this->load->view('Admin/bodyPruebas', $data);
+		$this->load->view('Test/scripts');
       }else{
       	$data1 = array( "header" => "Inicio");
       $this->load->view('Home/header', $data1);
@@ -27,39 +32,57 @@ class PruebasAdmin extends CI_Controller {
 	}
 	public function Agregar(){
 
-		$config['upload_path']          = './uploads/';
-                $config['allowed_types']        = 'jpg|png';
-                $config['max_size']             = 100;
-                $config['max_width']            = 1024;
-                $config['max_height']           = 768;
+		$res='';
+		if ($_POST) {
 
-                $this->load->library('upload', $config);
+			
+			# code...
+		
+		 for($i=0; $i<$count; $i++)
+    {              
 
-                if ( ! $this->upload->do_upload('fileImage'))
+        if ( ! $this->upload->do_upload('file-'.$i))
                 {
-                        $error = array('error' => $this->upload->display_errors());
+                        $res = array('error' => $this->upload->display_errors());
 
-                        //$this->load->view('upload_form', $error);
+                       // $this->load->view('upload_form', $error);
                 }
                 else
                 {
-                        $data = array('upload_data' => $this->upload->data());
+                        $res = array('upload_data' => $this->upload->data());
+                 
 
                         //$this->load->view('upload_success', $data);
+                        
+                        $data= array('tabla'=> "preguntas", 'datos'=> array('titulo' => $_POST['titulo'],
+				'descripcion' => $_POST['descripcion'], 
+				'fecha' => date('Y-m-d')));
+                        $descarga = $this->Admin_model->Save($data);
+                        
+			
+                        
                 }
-		if ($this->input->post()) {
-			$data['tabla']= "Galeria";
-			$data['datos']= array(
-				'titulo' => $this->input->post('titulo') ,
-				'titulo' => $this->input->post('titulo') ,
-				'titulo' => $this->input->post('titulo') ,
-				 );
-			# code...
-			$usuario = $this->Admin_model->Save($data);
-		} else {
-			# code...
+    }
+    } else {
+			$result  = array('status' => 300 , 'mensaje'=> 'ERROR' );
+    	echo json_encode($result);
 		}
+    if ($res['upload_data']) {
+    	# code...
+    	$result  = array('status' => 200 , 'mensaje'=> 'OK' );
+    	echo json_encode($result);
+    }else{
+    	$result  = array('status' => 300 , 'mensaje'=> $res );
+    	echo json_encode($result);
+    }
+    
 		
-		$usuario = $this->Admin_model->Logearse($correo, $contrasena);
+
+                
+                
+		
+                
+		
+		
 	}
-}
+	}

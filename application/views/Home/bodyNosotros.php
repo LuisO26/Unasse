@@ -2,7 +2,7 @@
         <section id="call-to-action" class="page-section no-pad bg-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 top-pad-20 bottom-pad-20 text-left white">
+                    <div class="col-md-12 top-pad-20 bottom-pad-20 text-center white">
                         <h3 class="text-uppercase inline-block tb-margin-20" data-animation="fadeInUp">Nosotros</h3>
                         
                     </div>
@@ -27,22 +27,34 @@
             <div class="container">
                 <div class="col-sm-12 col-md-12">
                     <div class="row" data-animation="fadeInUp">
-                        <div class="col-md-12">
+                        <div class="col-sm-4 col-md-4" data-animation="fadeInLeft">
+                        <h4 class="text-left bottom-margin-10"><img src="<?= base_url()?>assets/img/Mision2.png" style="height: 50px;margin-bottom: 3px;margin-right: 5px;" alt="">Misión</h4>
+                        <p class="text-left margin-lr justificado">La misión de UNASSE es promover una sociedad más justa e igualitaria que contribuya al desarrollo de los grupos menos representados en la sociedad.</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4" data-animation="fadeInUp">
+                        <h4 class="text-left bottom-margin-10"><img src="<?= base_url()?>assets/img/Vision2.png" style="height: 50px;margin-bottom: 3px;margin-right: 5px;" alt="">Vision</h4>
+                        <p class="text-left margin-lr justificado">Nuestra visión es ser un referente a nivel nacional e internacional, con modelos exitosos de educación, atención, prevención e incidencia política en derechos sexuales y reproductivos, salud sexual y reproductiva y violencia de género.</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4" data-animation="fadeInRight">
+                        <h4 class="text-left bottom-margin-10"><img src="<?= base_url()?>assets/img/Filosofia2.png" style="height: 50px;margin-bottom: 3px;margin-right: 5px;" alt="">Filosofia de Trabajo</h4>
+                        <p class="text-left margin-lr justificado">Nuestra filosofía de trabajo se basa en una conceptualización holística e integral de los seres humanos y humanas, con un enfoque en la autodeterminación y en la idea de un desarrollo sustentable.</p>
+                    </div>
+                        <!--<div class="col-md-12">
                             <div class="tabs">
                                 <ul class="nav nav-tabs">
                                     <li class="active">
                                         <a data-toggle="tab" href="#mision" aria-expanded="true">
-                                        <span class="open-sub"></span> 
+                                        <span class="open-sub"><img src="<?= base_url()?>assets/img/Mision2.png" style="height: 17px;" alt=""></span> 
                                          Misión</a>
                                     </li>
                                     <li class="">
                                         <a data-toggle="tab" href="#vision" aria-expanded="false">
-                                        <span class="open-sub"></span> 
+                                        <span class="open-sub"><img src="<?= base_url()?>assets/img/Vision2.png" style="height: 17px;" alt=""></span> 
                                          Vision</a>
                                     </li>
                                     <li class="">
                                         <a data-toggle="tab" href="#filosofia" aria-expanded="false">
-                                        <span class="open-sub"></span>  Filosofia de Trabajo</a>
+                                        <span class="open-sub"><img src="<?= base_url()?>assets/img/Filosofia2.png" style="height: 17px;" alt=""></span>  Filosofia de Trabajo</a>
                                     </li>
                                     
                                 </ul>
@@ -71,7 +83,7 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

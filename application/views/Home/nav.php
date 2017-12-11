@@ -16,8 +16,8 @@
                                 <span class="icon-bar"></span> 
                                 <span class="icon-bar"></span></button> 
                                  
-                                <a class="navbar-brand" href="index.html">
-                                    <img style="height: 100px; width: auto; " class="site_logo" alt="Site Logo" src="<?= base_url()?>assets/img/logo.png" />
+                                <a class="navbar-brand" href="<?=base_url()?>">
+                                    <img style="height: 70px; width: auto; margin-top: 10px; margin-bottom: 10px; " class="site_logo" alt="Site Logo" src="<?= base_url()?>assets/img/logo.png" />
                                 </a></div>
                                 <div class="navbar-collapse collapse" style="padding-top: 10px">
                                     <ul class="nav navbar-nav">
@@ -26,27 +26,27 @@
                                             
                                         </li>
                                         <li class="">
-                                            <a href="<?=base_url()?>index.php/Home/Galeria">Galería</a>
+                                            <a href="<?=base_url()?>Home/Galeria">Galería</a>
                                             
                                         </li>
                                         <li>
                                         <a href="#">¿Quienes somos?</a> 
                                         <ul class="dropdown-menu">
                                                 <li>
-                                                <a href="<?=base_url()?>index.php/Home/Nosotros">Nosotros</a>
+                                                <a href="<?=base_url()?>Home/Nosotros">Nosotros</a>
                                                 </li>
                                                 <li>
-                                                <a href="<?=base_url()?>index.php/Home/Servicios">Servicios</a>
+                                                <a href="<?=base_url()?>Home/Servicios">Servicios</a>
                                                 </li>
                                             </ul>
                                         <li>
-                                        <a href="<?=base_url()?>index.php/Home/Descargas">Descargas</a> 
+                                        <a href="<?=base_url()?>Home/Descargas">Descargas</a> 
                                     </li>
                                         <li>
-                                        <a href="<?=base_url()?>index.php/Home/Pruebas">Pruebas</a> 
+                                        <a href="<?=base_url()?>Home/Pruebas">Pruebas</a> 
                                         
                                         <li>
-                                        <a href="<?=base_url()?>index.php/Home/Contacto">Contacto</a> 
+                                        <a href="<?=base_url()?>Home/Contacto">Contacto</a> 
                                         </li>
                                         <li class="hidden-767">
                                             <a href="#" class="header-contact">

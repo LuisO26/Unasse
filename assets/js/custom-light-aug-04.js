@@ -1259,12 +1259,12 @@ function GmapInit() {
 	 });
 }
 	
-function MapLoadScript() {
+/*function MapLoadScript() {
 	var script = document.createElement('script');
 	script.type = 'text/javascript';
-	script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=GmapInit';
+	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAYMI8EyNg5f3GuxqphhuEoHzdXVafSPzc&sensor=false&' + 'callback=GmapInit';
 	document.body.appendChild(script);
-}
+}*/
 
 
 

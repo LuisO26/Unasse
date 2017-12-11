@@ -22,8 +22,8 @@
 
       $this->db->insert($data['tabla'],$data['datos'] );
    }
-   public function getGalerias(){
-      $query1 = $this->db->get('galeria');
+   public function getData($data){
+      $query1 = $this->db->get($data);
       $sql= $query1->result();
       return $sql;
 

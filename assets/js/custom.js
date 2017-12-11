@@ -1170,8 +1170,8 @@ function GmapInit() {
 	  Gmap = $('.map-canvas');
 	  Gmap.each(function() {
 		var $this           = $(this),
-			lat             = -35.2835,
-			lng             = 149.128,
+			lat             = 20.975079,
+			lng             = -89.618578,
 			zoom            = 12,
 			scrollwheel     = false,
 			zoomcontrol 	= true,
@@ -1241,7 +1241,6 @@ function GmapInit() {
 		var marker = new google.maps.Marker({
 		  position : new google.maps.LatLng(lat, lng),
 		  map      : map,
-		  icon     : image,
 		  title    : title
 		});
 		if( dataContent !== undefined && dataContent !== false ) {
@@ -1268,7 +1267,7 @@ function GmapInit() {
 function MapLoadScript() {
 	var script = document.createElement('script');
 	script.type = 'text/javascript';
-	script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=GmapInit';
+	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAYMI8EyNg5f3GuxqphhuEoHzdXVafSPzc&sensor=false&' + 'callback=GmapInit';
 	document.body.appendChild(script);
 }
 

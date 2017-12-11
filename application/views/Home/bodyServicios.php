@@ -2,7 +2,7 @@
         <section id="call-to-action" class="page-section no-pad bg-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 top-pad-20 bottom-pad-20 text-left white">
+                    <div class="col-md-12 top-pad-20 bottom-pad-20 text-center white">
                         <h3 class="text-uppercase inline-block tb-margin-20" data-animation="fadeInUp">Servicios</h3>
                         
                     </div>
@@ -22,7 +22,7 @@
                             <ul class="timeliner">
                                 <li>
                                     <div class="timeline-image">
-                                        <img width="200" height="200" class="img-circle" src="img/sections/services/1.jpg" alt="">
+                                        <img width="200" height="200" class="img-circle" src="<?=base_url()?>assets/img/Psicologia2.png" alt="">
                                     </div>
                                     <div class="timeline-panel ">
                                         <div class="timeline-heading">
@@ -35,7 +35,7 @@
                                 </li>
                                 <li class="timeline-inverted">
                                     <div class="timeline-image">
-                                        <img width="200" height="200" class="img-circle" src="img/sections/services/2.jpg" alt="">
+                                        <img width="200" height="200" class="img-circle" src="<?=base_url()?>assets/img/Legal2.png" alt="">
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -48,7 +48,7 @@
                                 </li>
                                 <li>
                                     <div class="timeline-image">
-                                        <img width="200" height="200" class="img-circle" src="img/sections/services/3.jpg" alt="">
+                                        <img width="200" height="200" class="img-circle" src="<?=base_url()?>assets/img/Conferencias2.png" alt="">
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -61,7 +61,7 @@
                                 </li>
                                 <li class="timeline-inverted">
                                     <div class="timeline-image">
-                                        <img width="200" height="200" class="img-circle" src="img/sections/services/4.jpg" alt="">
+                                        <img width="200" height="200" class="img-circle" src="<?=base_url()?>assets/img/Medica2.png" alt="">
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">

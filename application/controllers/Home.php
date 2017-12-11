@@ -41,7 +41,7 @@ class Home extends CI_Controller {
 		$this->load->view('Home/scripts');
 		} else {
 			$i = 0;
-		$datosg = $this->Admin_model->getGalerias();
+		$datosg = $this->Admin_model->getData('galeria');
 		foreach ($datosg as $ds) {
 			# code...
 			$imagenes[$i] = $this->Admin_model->getImagesById($ds->id);
@@ -64,12 +64,51 @@ class Home extends CI_Controller {
 		
 		
 	}
+	public function EnviarMail(){
+$email= $_POST['email'];
+$nombre = $_POST['nombre'];
+$telefono = $_POST['telefono'];
+$mensaje = $_POST['mensaje'];
+
+$para      = 'luisvame30@gmail.com';
+$titulo    = 'Contacto Pagina Web';
+$mensaje   = "<strong>From: </strong>Pagina web<br />
+<strong>Nombre: </strong>" . $nombre . "<br />
+	<strong>Email: </strong>" . $email . "<br />	
+	<strong>Phone: </strong>" . $telefono . "<br />	
+	<strong>Message: </strong>" . $mensaje;
+ 
+ $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+$cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+mail($para, $titulo, $mensaje, $cabeceras);
+
+$result  = array('status' => 200 , 'mensaje'=> 'Mensaje enviado.' );
+    	echo json_encode($result);
+	}
 	public function Nosotros()
 	{
 		$data = array( "header" => "Nosotros");
 		$this->load->view('Home/header', $data);
 		$this->load->view('Home/nav');
 		$this->load->view('Home/bodyNosotros');
+		$this->load->view('Home/footer');
+		$this->load->view('Home/scripts');
+	}
+	public function DatosPublico()
+	{
+		$data = array( "header" => "Nosotros");
+		$this->load->view('Home/header', $data);
+		$this->load->view('Home/nav');
+		$this->load->view('Home/bodyDatos');
+		$this->load->view('Home/footer');
+		$this->load->view('Home/scripts');
+	}
+	public function DatosInternos()
+	{
+		$data = array( "header" => "Nosotros");
+		$this->load->view('Home/header', $data);
+		$this->load->view('Home/nav');
+		$this->load->view('Home/bodyDatosInterno');
 		$this->load->view('Home/footer');
 		$this->load->view('Home/scripts');
 	}
@@ -102,10 +141,12 @@ class Home extends CI_Controller {
 	}
 	public function Descargas()
 	{
+		$datosg = $this->Admin_model->getData('descargas');
+		 $data1['descargas'] = $datosg;
 		$data = array( "header" => "Descargas");
 		$this->load->view('Home/header', $data);
 		$this->load->view('Home/nav');
-		$this->load->view('Home/bodyDescargas');
+		$this->load->view('Home/bodyDescargas',$data1);
 		$this->load->view('Home/footer');
 		$this->load->view('Home/scripts');
 	}

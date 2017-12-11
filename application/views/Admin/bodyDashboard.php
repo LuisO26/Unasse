@@ -1,46 +1,54 @@
-<section id="pie-chart" class="page-section">
+<section id="process" class="page-section">
             <div class="container">
-                <div class="section-title">
-                    <!-- Heading -->
-                    <h2 class="title">Pie Chart With Light Background</h2>
-                </div>
-                <div class="row text-center fact-counter">
-                    <div class="col-sm-4 col-md-3 bottom-xs-pad-30">
-                    <!-- Icon -->
-                    <i class="icon-window fa-3x text-color"></i> 
-                    <!-- number -->
-                    <div class="piechart" data-percent="70" data-barcolor="#ffc400" data-trackcolor="#ffffff" data-linewidth="8" data-size="140">
-                        <span></span>
+                <div class="row text-center">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="section-title" data-animation="fadeInUp">
+                            <!-- Heading -->
+                            <h2 class="title">UNASSE</h2>
+                        </div>
                     </div>
-                    <!-- Title -->
-                    <h5 class="text-color">Wordpress</h5></div>
-                    <div class="col-sm-4 col-md-3 bottom-xs-pad-30">
-                    <!-- Icon -->
-                    <i class="icon-html52 fa-3x text-color"></i> 
-                    <!-- number -->
-                    <div class="piechart" data-percent="85" data-barcolor="#ffc400" data-trackcolor="#ffffff" data-linewidth="8" data-size="140">
-                        <span></span>
+                     <div class="col-sm-6 col-md-4" data-animation="fadeInLeft">
+                        <div class="work-process-box square">
+                            <a href="<?=base_url()?>DescargasAdmin">
+                            <div class="process-content">
+                                <div class="item-number square"><i class="icon-star6"></i></div>
+                                <!-- Title -->
+                                <h4 class="title">Descargas</h4>
+                                <!-- Description -->
+                                <p>Agrega archivos pdf Para publico.</p>
+                            </div>
+                        </a>
+                        </div>
                     </div>
-                    <!-- Title -->
-                    <h5 class="text-color">HTML</h5></div>
-                    <div class="col-sm-4 col-md-3 bottom-xs-pad-30">
-                    <!-- Icon -->
-                    <i class="icon-add-shopping-cart fa-3x text-color"></i> 
-                    <!-- number -->
-                    <div class="piechart" data-percent="68" data-barcolor="#ffc400" data-trackcolor="#ffffff" data-linewidth="8" data-size="140">
-                        <span></span>
+                    <!-- text -->
+                    <div class="col-sm-6 col-md-4" data-animation="fadeInLeft">
+                        <div class="work-process-box square">
+                            <a href="<?=base_url()?>GaleriaAdmin">
+                            <div class="process-content">
+                                <div class="item-number square"><i class="icon-star6"></i></div>
+                                <!-- Title -->
+                                <h4 class="title">Galeria</h4>
+                                <!-- Description -->
+                                <p>Crea una nueva galeria de fotos.</p>
+                            </div>
+                            </a>
+                        </div>
                     </div>
-                    <!-- Title -->
-                    <h5 class="text-color">E-commerce</h5></div>
-                    <div class="col-sm-4 col-md-3 bottom-xs-pad-30">
-                    <!-- Icon -->
-                    <i class="icon-perm-phone-msg fa-3x text-color"></i> 
-                    <!-- number -->
-                    <div class="piechart" data-percent="99" data-barcolor="#ffc400" data-trackcolor="#ffffff" data-linewidth="8" data-size="140">
-                        <span></span>
+                    <!-- .process-box-one -->
+                    <div class="col-sm-6 col-md-4">
+                        <div class="work-process-box square">
+                            <a href="<?=base_url()?>PruebasAdmin">
+                            <div class="process-content">
+                                <div class="item-number square"><i class="icon-download6"></i></div>
+                                <!-- Title -->
+                                <h4 class="title">Pruebas</h4>
+                                <!-- Description -->
+                                <p>Crea una nueva Prueba para el publico.</p>
+                            </div>
+                        </a>
+                        </div>
                     </div>
-                    <!-- Title -->
-                    <h5 class="text-color">Great Support</h5></div>
+                    <!-- .process-box-two -->
                 </div>
             </div>
         </section>

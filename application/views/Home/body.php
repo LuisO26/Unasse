@@ -5,68 +5,53 @@
                     <!-- Slide -->
                     <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
-                            <h1 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="102" data-y="101"
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="250"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>30 de Enero</strong>
                             </h1>
-                            <!-- <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Let’s Stop This Hunger and
-                                <br />Fullfill Their Happiness</strong>
-                            </h2>
-                            <div class="tp-caption tp-resizeme lfr skewtoright description white" data-x="502" data-y="395"
-                            data-speed="1000" data-start="1900" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <p>Proin a velit aliquam vitae malesuada rutrum. Proin a velit aliquam vitae malesuada rutrum.
-                                Proin a velit aliquam vitae malesuada rutrum. Aenean ullamcorper placerat porttitor velit aliquam
-                                vitae. Aliquam a augue suscipit, bibendum luctus neque laoreet rhoncus ipsum, ullamcorper</p>
-                            </div>
-                            <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" data-x="502" data-y="492"
-                            data-speed="1000" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">Donate Now</a> -->
+                            
                         </div>
                         <img src="<?= base_url()?>assets/img/1.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
                     </li>
                     <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="180"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>Informate</strong>
-                            </h2>
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
+                            </h1>
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="320"
                             data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>Y Aprende</strong>
-                            </h2>
+                            </h1>
                         </div>
                         <img src="<?= base_url()?>assets/img/2.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
                     </li>
                     <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
-                            data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="250"
+                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>Contáctanos</strong>
-                            </h2>
-                            <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" data-x="502" data-y="492"
+                            </h1>
+                            <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" style="color: white; " data-x="550" data-y="492"
                             data-speed="1000" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">Aquí</a>
+                            data-endeasing="Power1.easeIn"><h1><strong>Aquí</strong></h1></a>
                         </div>
                         <img src="<?= base_url()?>assets/img/3.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
                     </li>
                     <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
-                            data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="250"
+                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>Hazte la prueba</strong>
-                            </h2>
+                            </h1>
                             
                         </div>
                         <img src="<?= base_url()?>assets/img/4.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
@@ -74,11 +59,11 @@
                     </li>
                     <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
-                           <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
-                            data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="250"
+                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>Hazte la prueba</strong>
-                            </h2>
+                            </h1>
                             
                         </div>
                         <img src="<?= base_url()?>assets/img/5.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
@@ -86,32 +71,32 @@
                     </li>
                     <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="180"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>Labor Social</strong>
-                            </h2>
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
+                            </h1>
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="320"
                             data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>Y Humanitaria</strong>
-                            </h2>
+                            </h1>
                         </div>
                         <img src="<?= base_url()?>assets/img/foto6.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
                     </li>
                     <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title bold text-color" data-x="502" data-y="181"
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="180"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>Derechos de</strong>
-                            </h2>
-                            <h2 class="tp-caption tp-resizeme lft skewtotop title white" data-x="502" data-y="261"
+                            </h1>
+                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="320"
                             data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
                                 <strong>Los jovenes</strong>
-                            </h2>
+                            </h1>
                         </div>
                         <img src="<?= base_url()?>assets/img/7.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
@@ -135,21 +120,21 @@
                                 <!-- Bakery block -->
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInLeft">
                                     <!-- icon -->
-                                    <i class="icon-heart2   medium fill-icon fa-3x icons-circle border-color"></i>
+                                    <i  class="icon-heart2   medium fill-icon fa-3x icons-circle border-color"></i>
                                     <h5>Acerca de nosotros.</h5>
                                 </div>
                                 <!-- Bakery block -->
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInUp">
                                     <!-- icon -->
                                     <!-- icon -->
-                                    <i class="icon-speaker medium fill-icon fa-3x icons-circle border-color"></i>
+                                    <i class="icon-download9 medium fill-icon fa-3x icons-circle border-color"></i>
                                     <h5>Descarga de información</h5>
                                     
                                 </div>
                                 <!-- Bakery block -->
-                                <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInRight">
+                                <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInUp">
                                     <!-- icon -->
-                                    <i class="icon-user medium fill-icon fa-3x icons-circle border-color"></i>
+                                    <i class="icon-compose medium fill-icon fa-3x icons-circle border-color"></i>
                                     <h5>Responde nuestro Test</h5>
                                 </div>
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInRight">
@@ -174,15 +159,15 @@
                 <div class="row">
                     <div class="col-sm-4 col-md-4" data-animation="fadeInLeft">
                         <h4 class="text-left bottom-margin-10">Psicologia</h4>
-                        <p class="text-left">Brindar asesoría psicológica a bajos costos a la población en general, incluyendo a niños, niñas y adolescentes con problemas emocionales y conductuales así como atención especializada a personas víctimas de abuso sexual y/o violencia intrafamiliar.</p>
+                        <p class="text-left margin-lr justificado">Brindar asesoría psicológica a bajos costos a la población en general, incluyendo a niños, niñas y adolescentes con problemas emocionales y conductuales así como atención especializada a personas víctimas de abuso sexual y/o violencia intrafamiliar.</p>
                     </div>
                     <div class="col-sm-4 col-md-4" data-animation="fadeInUp">
                         <h4 class="text-left bottom-margin-10">Asesoria Legal</h4>
-                        <p class="text-left">Brindamos asesoría jurídica derivado del Derecho Civil Familiar a personas que no cuentan con los recursos para el pago de servicios particulares. Con el apoyo de un equipo profesional y especializado, prevenimos y atendemos la violencia física, psicológica, sexual y económica.</p>
+                        <p class="text-left margin-lr justificado">Brindamos asesoría jurídica derivado del Derecho Civil Familiar a personas que no cuentan con los recursos para el pago de servicios particulares. Con el apoyo de un equipo profesional y especializado, prevenimos y atendemos la violencia física, psicológica, sexual y económica.</p>
                     </div>
                     <div class="col-sm-4 col-md-4" data-animation="fadeInRight">
                         <h4 class="text-left bottom-margin-10">Conferencias y Talleres</h4>
-                        <p class="text-left">Sensibilizar al menor sobre los riesgos psicosociales, así como fomentar el cuidado en la salud, promover cambios de actitud y una adecuada utilización del tiempo libre enfocada al beneficio de su comunidad. Dirigido a niños y niñas de 6 a 12 años.</p>
+                        <p class="text-left margin-lr justificado">Sensibilizar al menor sobre los riesgos psicosociales, así como fomentar el cuidado en la salud, promover cambios de actitud y una adecuada utilización del tiempo libre enfocada al beneficio de su comunidad. Dirigido a niños y niñas de 6 a 12 años.</p>
                     </div>
                 </div>
             </div>
@@ -208,8 +193,8 @@
                         <div class="col-md-12 testimonails" data-animation="fadeInRight">
                             <div class="owl-carousel pagination-1 dark-switch" data-pagination="true" data-autoplay="true" data-navigation="false" data-items="1" data-desktop="1">
                                 <div class="item pad-10">
-                                    <div class="desc-border bottom-arrow">
-                                        <blockquote class="small-text text-center">
+                                    <div class="desc-border bottom-arrow margin-lr-15p">
+                                        <blockquote class="small-text text-center ">
                                             "Cualquier forma de violencia hacia mi persona afecta el disfrute plenno de mi sexualidad." 
 "Tengo derecho a la libertad, a la seguridad jurídica y a la ingegridad física y psicológica." 
                                         </blockquote>
@@ -222,8 +207,8 @@
                                     </div>
                                 </div>
                                 <div class="item pad-10">
-                                    <div class="desc-border bottom-arrow">
-                                        <blockquote class="small-text text-center">
+                                    <div class="desc-border bottom-arrow margin-lr-15p">
+                                        <blockquote class="small-text text-center ">
                                            "Existen varios tipos de familias, uniones y convivencia social." 
 "Tengo derecho a decidir libremente con quién compartir mi vida, mi sexualidad, mis emociones y afectos." 
                                         </blockquote>
@@ -237,8 +222,8 @@
                                     </div>
                                 </div>
                                 <div class="item pad-10">
-                                    <div class="desc-border bottom-arrow">
-                                        <blockquote class="small-text text-center">
+                                    <div class="desc-border bottom-arrow margin-lr-15p">
+                                        <blockquote class="small-text text-center ">
                                             "Existen diversas formas de vivir la sexualidad." 
 "Tengo derecho a que se respeten las desiciones que tomo sobre mi cuerpo y mi sexualidad."
                                         </blockquote>

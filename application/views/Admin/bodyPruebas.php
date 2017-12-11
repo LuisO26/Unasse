@@ -18,19 +18,24 @@
 				  <div class="well">
 					<form id="form" enctype="multipart/form-data">
 						<input type="hidden" id="url" value="<?= $url ?>">
+						<input type="hidden" id="cantidadPreguntas" value="">
 				  <div class="form-group">
 					<label for="titulo">Titulo</label>
-					<input type="text" class="form-control" name="titulo" id="titulo" placeholder="Ingrese titulo de Galeria...">
+					<input type="text" class="form-control" name="titulo" id="titulo" placeholder="Ingrese titulo de prueba...">
 				  </div>
 				  <div class="form-group">
 					<label for="descripcion">Descripción</label>
 					<input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Ingrese una pequeña descripción...">
 				  </div>
-				  <div class="form-group">
-					<label for="exampleInputFile">Ingrese imagenes</label>
-					<input type="file" name="file[]" id="file" multiple>
+				  <button type="button" id="addQuestion"  class="btn btn-default">Agregar Pregunta </button>
+				  <div id="pregunta" >
+				  	
+				  	
 				  </div>
-				  <a id="submitAdd" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Cargando Datos"  class="btn btn-primary">Crear </a>
+				  
+
+				  
+				  <button type="button" id="submitAdd" data-loading-text="Loading..." class="btn btn-primary">Crear </button>
 				</form>
 				  </div>
 				</div>
@@ -57,7 +62,7 @@
 						  <th scope="row"><?= $i?></th>
 						  <td><?= $gale->titulo;?></td>
 						  <td><?= $gale->descripcion;?></td>
-						  <td><?= $gale->fecha;?></td>
+						  <td><?= $gale->url;?></td>
 						  <td><a href="#">borrar</a></td>
 						</tr>
 											

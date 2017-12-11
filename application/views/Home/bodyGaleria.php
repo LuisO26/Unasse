@@ -2,7 +2,7 @@
         <section id="call-to-action" class="page-section no-pad bg-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 top-pad-20 bottom-pad-20 text-left white">
+                    <div class="col-md-12 top-pad-20 bottom-pad-20 text-center white">
                         <h3 class="text-uppercase inline-block tb-margin-20" data-animation="fadeInUp">Galería</h3>
                         
                     </div>

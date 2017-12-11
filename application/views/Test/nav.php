@@ -39,9 +39,9 @@
                                                 </li>
                                             </ul>
                                         <li>
-                                        <!--<li>
+                                        <li>
                                         <a href="<?=base_url()?>/Micrositios">Micro Sitios</a> 
-                                        <li>-->
+                                        <li>
                                     </ul>
                                         
                                     </ul>
