@@ -26,12 +26,12 @@
                                 </address>
                                 <address class="col-sm-4 col-md-4">
                                     <i class="fa fa-envelope i-9x icons-circle text-color light-bg hover-black"></i>
-                                    <div class="title">Correo Electronico</div>
+                                    <div class="title">Correo Electrónico</div>
                                     <div>Información: <a href="mailto:contacto@unasse.org">contacto@unasse.org</a></div>
                                 </address>
                             </div>
                             <hr>
-                            <h4>Envianos un mensaje y en breve nos pondremos en contacto contigo </h4>
+                            <h4>Envíanos un mensaje y en breve nos pondrémos en contacto contigo. </h4>
                             <br />
                         </div>
                     <p class="form-message" style="display: none;"></p>
@@ -41,21 +41,21 @@
                                 <div class="col-md-6">
                                     <!-- Field 1 -->
                                     <div class="input-text form-group">
-                                        <input type="text" name="nombre" class="input-name form-control" placeholder="Nombre Completo..." />
+                                        <input type="text" name="nombre" id="nombre" class="input-name form-control" placeholder="Nombre Completo*" />
                                     </div>
                                     <!-- Field 2 -->
                                     <div class="input-email form-group">
-                                        <input type="email" name="email" class="input-email form-control" placeholder="Correo..."/>
+                                        <input type="email" name="email" id="email" class="input-email form-control" placeholder="Correo*"/>
                                     </div>
                                     <!-- Field 3 -->
                                     <div class="input-email form-group">
-                                        <input type="text" name="telefono" class="input-phone form-control" placeholder="Teléfono..."/>
+                                        <input type="text" name="telefono" id="telefono" class="input-phone form-control" placeholder="Teléfono"/>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Field 4 -->
                                     <div class="textarea-message form-group">
-                                        <textarea name="mensaje" class="textarea-message height-82 form-control" placeholder="Escribas su mensaje..." rows="2" ></textarea>
+                                        <textarea name="mensaje" id="mensaje" class="textarea-message height-82 form-control" placeholder="Por favor escriba su mensaje" rows="2" ></textarea>
                                     </div>
                                     <!-- Button -->
                                     <button class="btn btn-default btn-block" id="enviarCorreo" type="button">Enviar<i class="icon-paper-plane"></i></button>
@@ -76,12 +76,16 @@
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <strong>Error!</strong> Problemas al enviar mensaje, intente de nuevo mas tarde.
 </div>
+<div style="display: none"  class=" alert alert-danger alert-danger1 alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Info!</strong> Revise los campos obligatorios.
+</div>
     </div>
             </section><!-- page-section -->
             <section id="map">
                 <div class="map-section">
                     <div class="map-canvas"
-                        data-zoom="12"
+                        data-zoom="18"
                         data-lat="20.975079"
                         data-lng="-89.618578"            
                         data-type="roadmap"

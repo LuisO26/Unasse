@@ -38,6 +38,10 @@
   
 });
     $("#enviarCorreo").on('click', function(){
+        if ($('#nombre').val()=== ''|| $('#email').val()=== '')|| $('#mensaje').val()=== '' {
+            $(".alert-danger1").show();
+            return false
+        }
         console.log($( "#formContacto" ).serialize())
          $.ajax({
                 url: '<?= base_url()?>Home/EnviarMail', // url where to submit the request

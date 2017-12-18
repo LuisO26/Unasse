@@ -32,11 +32,11 @@
                         <p class="text-left margin-lr justificado">La misión de UNASSE es promover una sociedad más justa e igualitaria que contribuya al desarrollo de los grupos menos representados en la sociedad.</p>
                     </div>
                     <div class="col-sm-4 col-md-4" data-animation="fadeInUp">
-                        <h4 class="text-left bottom-margin-10"><img src="<?= base_url()?>assets/img/Vision2.png" style="height: 50px;margin-bottom: 3px;margin-right: 5px;" alt="">Vision</h4>
+                        <h4 class="text-left bottom-margin-10"><img src="<?= base_url()?>assets/img/Vision2.png" style="height: 50px;margin-bottom: 3px;margin-right: 5px;" alt="">Visión </h4>
                         <p class="text-left margin-lr justificado">Nuestra visión es ser un referente a nivel nacional e internacional, con modelos exitosos de educación, atención, prevención e incidencia política en derechos sexuales y reproductivos, salud sexual y reproductiva y violencia de género.</p>
                     </div>
                     <div class="col-sm-4 col-md-4" data-animation="fadeInRight">
-                        <h4 class="text-left bottom-margin-10"><img src="<?= base_url()?>assets/img/Filosofia2.png" style="height: 50px;margin-bottom: 3px;margin-right: 5px;" alt="">Filosofia de Trabajo</h4>
+                        <h4 class="text-left bottom-margin-10"><img src="<?= base_url()?>assets/img/Filosofia2.png" style="height: 50px;margin-bottom: 3px;margin-right: 5px;" alt="">Filosofía de trabajo</h4>
                         <p class="text-left margin-lr justificado">Nuestra filosofía de trabajo se basa en una conceptualización holística e integral de los seres humanos y humanas, con un enfoque en la autodeterminación y en la idea de un desarrollo sustentable.</p>
                     </div>
                         <!--<div class="col-md-12">

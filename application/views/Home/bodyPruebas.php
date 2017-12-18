@@ -74,9 +74,9 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <h3 class="upper">Esta seccion</h3>
-                        <h1 class="upper bg-color">Esta en Mantenimiento</h1>
-                        <h3 class="upper">Pronto podras realizar tu pruebas</h3>
+                        <h3 class="upper">ESTA SECCIÓN </h3>
+                        <h1 class="upper bg-color">ESTÁ EN MANTENIMIENTO</h1>
+                        <h3 class="upper">PRONTO PODRÁS REALIZAR TUS PRUEBAS</h3>
                         <div class="icon-big">
                             <i class="fa fa-cog fa-5x rotating text-color"></i>
                         </div>
