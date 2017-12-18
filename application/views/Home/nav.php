@@ -30,7 +30,7 @@
                                             
                                         </li>
                                         <li>
-                                        <a href="#">¿Quienes somos?</a> 
+                                        <a href="#">¿Quiénes somos?</a> 
                                         <ul class="dropdown-menu">
                                                 <li>
                                                 <a href="<?=base_url()?>Home/Nosotros">Nosotros</a>
@@ -43,7 +43,7 @@
                                         <a href="<?=base_url()?>Home/Descargas">Descargas</a> 
                                     </li>
                                         <li>
-                                        <a href="<?=base_url()?>Home/Pruebas">Pruebas</a> 
+                                        <a href="<?=base_url()?>Home/Pruebas">Test</a> 
                                         
                                         <li>
                                         <a href="<?=base_url()?>Home/Contacto">Contacto</a> 

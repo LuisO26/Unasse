@@ -32,6 +32,9 @@
                                                 <a href="<?=base_url()?>/DescargasAdmin">Descargas</a>
                                                 </li>
                                                 <li>
+                                                <a href="<?=base_url()?>/HomeAdmin">Configurar Inicio</a>
+                                                </li>
+                                                <li>
                                                 <a href="<?=base_url()?>/GaleriaAdmin">Galería</a>
                                                 </li>
                                                 <li>

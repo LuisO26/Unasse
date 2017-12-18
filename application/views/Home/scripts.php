@@ -112,6 +112,7 @@
 
     //var $this = $('.btns');
     //$this.button('loading');
+    $(".alert-primary").show();
     var url =  $('#url').val();
             
              var fdata = new FormData()
@@ -134,6 +135,7 @@
                     // tab of the developer tools
                     var obj = $.parseJSON(result);
                     console.log(obj);
+                    $(".alert-primary").hide();
                     if(obj.status == 200) {
                       $(".alert-success").show();
                       $("#btnnuevo").attr('class','btn btn-primary collapsed');

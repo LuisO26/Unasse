@@ -27,12 +27,8 @@
 					<input type="text" class="form-control" name="titulo" id="titulo" placeholder="Ingrese titulo de Galeria...">
 				  </div>
 				  <div class="form-group">
-					<label for="descripcion">Descripción</label>
+					<label for="descripcion">Link Video Youtube</label>
 					<input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Ingrese una pequeña descripción...">
-				  </div>
-				  <div class="form-group">
-					<label for="exampleInputFile">Ingrese PDF</label>
-					<input type="file" name="file[]" id="file" >
 				  </div>
 				  <button type="button" id="submitAdd" data-loading-text="Loading..." class="btn btn-primary">Crear </button>
 				</form>

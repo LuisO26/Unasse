@@ -109,7 +109,7 @@
         <!-- slider -->
         <section style="margin:0px">
             <div class="row" style="background-color: #55a2a6; padding-top: 25px; padding-bottom: 25px;">
-                <h4 class="text-center white" style="margin:0px;">Unidad de Atención Sicológica, Sexológica y Educativa para el Crecimiento Personal.</h4>
+                <h4 class="text-center white" style="margin:0px;">Unidad de Atención Psicológica y Educativa para el Crecimiento Personal.</h4>
             </div>
         </section>
          <section id="about-us" class="page-section">
@@ -121,26 +121,26 @@
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInLeft">
                                     <!-- icon -->
                                     <i  class="icon-heart2   medium fill-icon fa-3x icons-circle border-color"></i>
-                                    <h5>Acerca de nosotros.</h5>
+                                    <h5>Acerca de nosotros</h5>
                                 </div>
                                 <!-- Bakery block -->
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInUp">
                                     <!-- icon -->
                                     <!-- icon -->
                                     <i class="icon-download9 medium fill-icon fa-3x icons-circle border-color"></i>
-                                    <h5>Descarga de información</h5>
+                                    <h5> Descarga de información</h5>
                                     
                                 </div>
                                 <!-- Bakery block -->
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInUp">
                                     <!-- icon -->
                                     <i class="icon-compose medium fill-icon fa-3x icons-circle border-color"></i>
-                                    <h5>Responde nuestro Test</h5>
+                                    <h5>Responde nuestro test</h5>
                                 </div>
                                 <div class="col-sm-3 col-md-3 bakery-block" data-animation="fadeInRight">
                                     <!-- icon -->
                                     <i class="icon-camera medium fill-icon fa-3x icons-circle border-color"></i>
-                                    <h5>Galeria de Fotos</h5>
+                                    <h5>Galería de fotos</h5>
                                 </div>
                             </div>
                         </div>
@@ -152,17 +152,17 @@
                 <div class="row text-center ">
                     <div class="col-md-12" data-animation="fadeInLeft">
                         <div class="section-title text-center">
-                            <h1 class="title">¿Que es lo que hacemos?</h1>
+                            <h1 class="title">¿QUÉ ES LO QUE HACEMOS?</h1>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 col-md-4" data-animation="fadeInLeft">
-                        <h4 class="text-left bottom-margin-10">Psicologia</h4>
+                        <h4 class="text-left bottom-margin-10">Psicología</h4>
                         <p class="text-left margin-lr justificado">Brindar asesoría psicológica a bajos costos a la población en general, incluyendo a niños, niñas y adolescentes con problemas emocionales y conductuales así como atención especializada a personas víctimas de abuso sexual y/o violencia intrafamiliar.</p>
                     </div>
                     <div class="col-sm-4 col-md-4" data-animation="fadeInUp">
-                        <h4 class="text-left bottom-margin-10">Asesoria Legal</h4>
+                        <h4 class="text-left bottom-margin-10">Asesoría Legal</h4>
                         <p class="text-left margin-lr justificado">Brindamos asesoría jurídica derivado del Derecho Civil Familiar a personas que no cuentan con los recursos para el pago de servicios particulares. Con el apoyo de un equipo profesional y especializado, prevenimos y atendemos la violencia física, psicológica, sexual y económica.</p>
                     </div>
                     <div class="col-sm-4 col-md-4" data-animation="fadeInRight">
@@ -179,7 +179,7 @@
                     <div class="col-md-12 pad-60">
                         <div class="section-title text-center" data-animation="fadeInUp">
                             <!-- Title -->
-                            <h2 class="title">Dia internacional contra la violencia hacia las mujeres</h2>
+                            <h2 class="title text-uppercase">Dia internacional contra la violencia hacia las mujeres</h2>
                         </div>
                         <iframe class="youtube-player" type="text/html" width="900" height="485" src="https://www.youtube.com/embed/5MOwgujGyBM" frameborder="0"></iframe>
                         

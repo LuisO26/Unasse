@@ -1,5 +1,5 @@
 <section id="works" class="page-section">
-           <div class="mixed-grid">
+           <div class="mixed-grid pad">
             <div class="section-title">
                     <!-- Heading -->
                     <h2 class="title"><?=$titulo ?></h2>
@@ -11,7 +11,7 @@
                             foreach ($imagenes as $img) {
                                 ?>
                                 <div class="grid-item all web">
-                        <img src="<?= base_url()?>assets/img/galeria/<?=$img->nombre ?>" alt="Recent Work" />
+                        <img style="height: 300px; width: 500px" src="<?= base_url()?>assets/img/galeria/<?=$img->nombre ?>" alt="Recent Work" />
                         <div class="img-overlay"></div>
                         <div class="figcaption">
                         <!-- Image Popup-->

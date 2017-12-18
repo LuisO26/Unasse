@@ -7,6 +7,19 @@
                             <h2 class="title">UNASSE</h2>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-md-4" data-animation="fadeInLeft">
+                        <div class="work-process-box square">
+                            <a href="<?=base_url()?>HomeAdmin">
+                            <div class="process-content">
+                                <div class="item-number square"><i class="icon-star6"></i></div>
+                                <!-- Title -->
+                                <h4 class="title">Configurar Inicio</h4>
+                                <!-- Description -->
+                                <p>Cambiar video y titulo de actual inicio.</p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
                      <div class="col-sm-6 col-md-4" data-animation="fadeInLeft">
                         <div class="work-process-box square">
                             <a href="<?=base_url()?>DescargasAdmin">

@@ -8,6 +8,10 @@
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <strong>Error!</strong> Problemas al guardar los datos, intente de nuevo.
 </div>
+<div style="display: none"  class=" alert alert-primary alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Cargando datos!</strong> Enviando datos espere....
+</div>
 	</div>
 
 	<div class="container">
