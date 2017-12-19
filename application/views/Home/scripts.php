@@ -2,6 +2,11 @@
 <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.min.js"></script> 
 
 <script type="text/javascript">
+    $('#pdfseleccionado').bind('click', 'iframe', function(event) { 
+        var url = $(this).attr('src')
+        location.href = url
+
+     })
     $("#submit1").on('click', function(){
 
     //var $this = $('.btns');
@@ -38,7 +43,7 @@
   
 });
     $("#enviarCorreo").on('click', function(){
-        if ($('#nombre').val()=== ''|| $('#email').val()=== '')|| $('#mensaje').val()=== '' {
+        if ($('#nombre').val()== ''|| $('#email').val()=='')|| $('#mensaje').val()== '' {
             $(".alert-danger1").show();
             return false
         }

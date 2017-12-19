@@ -11,7 +11,7 @@
         </section>
         <section class="page-section">
             <div class="container">
-                <div class="row">
+                <div class="row" id= "pdfseleccionado">
                     
                         <?php 
                         $i = 0; 
@@ -20,8 +20,8 @@
                                 ?>
                                 <div class="col-sm-12 col-md-6 post-list">
                                 <div class="post-item">
-                            <div class="post-image pull-left"><a href="<?= base_url()?>/<?=$gale->url?>">
-                                <img src="<?= base_url()?>/assets/img/pdf.png" width="150" height="282" alt="" title="" /></a>
+                            <div class="post-image pull-left">
+                                <iframe id="iframe" src="<?= base_url()?>/<?=$gale->url?>" width="300" height="150"></iframe>  
                             </div>
                             <h2 class="post-title">
                                 <a href="<?= base_url()?>/<?=$gale->url?>"><?=$gale->titulo?></a>
