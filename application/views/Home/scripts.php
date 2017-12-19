@@ -43,8 +43,13 @@
   
 });
     $("#enviarCorreo").on('click', function(){
-        if ($('#nombre').val()== ''|| $('#email').val()=='')|| $('#mensaje').val()== '' {
-            $(".alert-danger1").show();
+        if ($('#nombre').val()== ''|| $('#email').val()==''|| $('#mensaje').val()== '') {
+            $(".alert-danger1").show()
+            setTimeout(function() {
+               $(".alert-danger1").fadeOut();           
+          },2000);
+          
+
             return false
         }
         console.log($( "#formContacto" ).serialize())
