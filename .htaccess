@@ -13,7 +13,7 @@
  
  RewriteEngine on
  
-RewriteBase /
+#RewriteBase /
  RewriteCond $1 !^(index\.php|robots\.txt|sitemap\.xml|assets|css|js)
  RewriteCond %{REQUEST_FILENAME} !-f
  RewriteCond %{REQUEST_FILENAME} !-d

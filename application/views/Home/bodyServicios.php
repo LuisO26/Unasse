@@ -75,7 +75,7 @@
                                 </li>
                                 <li>
                                     <div class="timeline-image">
-                                        <img width="200" height="200" class="img-circle" src="<?=base_url()?>assets/img/Conferencias2.png" alt="">
+                                        <img width="200" height="200" class="img-circle" src="<?=base_url()?>assets/img/PruebaVIH2.png" alt="">
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">

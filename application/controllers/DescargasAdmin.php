@@ -30,6 +30,19 @@ class DescargasAdmin extends CI_Controller {
    }
 		
 	}
+  public function borrar(){
+      $id= $_POST['id'];
+      $resp = $this->Admin_model->borrarPdf($id);
+      if ($resp == 'borrado') {
+        $respuesta  = array('status' => 200 , 'mensaje'=> 'Pdf Borrado' );
+      echo json_encode($respuesta);
+      }else{
+        $respuesta  = array('status' => 300 , 'mensaje'=> 'Hubo un problema' );
+      echo json_encode($respuesta);
+      }
+      
+
+   }
 	public function Agregar(){
 
 		$res='';

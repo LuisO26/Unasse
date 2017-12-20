@@ -22,15 +22,29 @@
 				  <div class="well">
 					<form id="form" enctype="multipart/form-data">
 						<input type="hidden" id="url" value="<?= $url ?>">
+						<input type="hidden" id="cantidadPreguntas" value="">
 				  <div class="form-group">
 					<label for="titulo">Titulo</label>
-					<input type="text" class="form-control" name="titulo" id="titulo" placeholder="Ingrese titulo de Galeria...">
+					<input type="text" class="form-control" name="titulo" id="titulo" placeholder="Ingrese titulo de prueba...">
 				  </div>
 				  <div class="form-group">
-					<label for="descripcion">Link Video Youtube</label>
+					<label for="descripcion">Descripción</label>
 					<input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Ingrese una pequeña descripción...">
 				  </div>
-				  <button type="button" id="submitAdd" data-loading-text="Loading..." class="btn btn-primary">Crear </button>
+				  <div class="form-group">
+					<label for="exampleInputFile">Ingrese imagenes</label>
+					<input type="file" name="file[]" id="file" multiple>
+				  </div>
+				  <div id="pregunta" >
+				  	
+				  	
+				  </div>
+				  <button type="button" id="addQuestion"  class="btn btn-default">Agregar Imagen a carrusel </button>
+				  
+				  
+
+				  
+				  <center><button type="button" id="submitAdd"  class="btn btn-primary">Crear </button></center>
 				</form>
 				  </div>
 				</div>

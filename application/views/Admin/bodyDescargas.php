@@ -24,7 +24,7 @@
 						<input type="hidden" id="url" value="<?= $url ?>">
 				  <div class="form-group">
 					<label for="titulo">Titulo</label>
-					<input type="text" class="form-control" name="titulo" id="titulo" placeholder="Ingrese titulo de Galeria...">
+					<input type="text" class="form-control" name="titulo" id="titulo" placeholder="Ingrese titulo de descarga...">
 				  </div>
 				  <div class="form-group">
 					<label for="descripcion">Descripción</label>
@@ -61,8 +61,8 @@
 						  <th scope="row"><?= $i?></th>
 						  <td><?= $gale->titulo;?></td>
 						  <td><?= $gale->descripcion;?></td>
-						  <td><?= $gale->url;?></td>
-						  <td><a href="#">borrar</a></td>
+						  <td><iframe style="width:150px" src="<?=base_url()?><?= $gale->url;?>"></iframe></td>
+						  <td><center><button style="color:red;" type="button" onClick="borrar(<?=$gale->id?>, 'DescargasAdmin')" id="borrar_descarga"><i class="fa fa-trash" aria-hidden="true"></i></button></center></td>
 						</tr>
 											
 											<?php  

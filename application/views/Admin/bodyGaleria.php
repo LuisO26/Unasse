@@ -63,7 +63,7 @@
 						  <td><?= $gale->titulo;?></td>
 						  <td><?= $gale->descripcion;?></td>
 						  <td><?= $gale->fecha;?></td>
-						  <td><center><button style="color:red;" type="button" id="borrar_galeria"><i class="fa fa-trash" aria-hidden="true"></i></button></center></td>
+						  <td><center><button style="color:red;" type="button" onClick="borrar(<?=$gale->id?>, 'GaleriaAdmin')" id="borrar_galeria"><i class="fa fa-trash" aria-hidden="true"></i></button></center></td>
 						</tr>
 											
 											<?php  

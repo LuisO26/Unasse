@@ -24,9 +24,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 if( isset($_SERVER['HTTPS'] ) ) {
-	$config['base_url'] = 'https://' . $_SERVER['SERVER_NAME'] . '/';
+	$config['base_url'] = 'https://' . $_SERVER['SERVER_NAME'] . '/Unasse';
 } else{
-	$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . '/';
+	$config['base_url'] = 'http://' . $_SERVER['SERVER_NAME'] . '/Unasse';
 }
 /*
 |--------------------------------------------------------------------------

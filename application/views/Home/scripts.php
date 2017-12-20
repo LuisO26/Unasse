@@ -81,6 +81,45 @@
             });
 
     });
+    function borrar(vid,controller){
+        var idborrar =  vid
+            
+             var fdata = new FormData()
+    
+   fdata.append("id",idborrar);
+       console.log(fdata)
+
+            $.ajax({
+                url: '<?= base_url()?>'+controller+'/borrar', // url where to submit the request
+                type : "POST", // type of action POST || GET
+                data :  fdata, // post data || get data
+                contentType: false,
+                processData: false,
+                success : function(result) {
+                    // you can see the result from the console
+                    // tab of the developer tools
+                    var obj = $.parseJSON(result);
+                    console.log(obj);
+                    if(obj.status == 200) {
+                      $("#alert-borrado").show();
+                       setTimeout('document.location.reload()',2000)
+                       
+                    }
+                    if(obj.status == 300) {
+                      $("#alert-borradomal").show();
+                      console.log(result)
+                       //$this.button('reset');
+                       
+                    }
+                },
+                error: function(xhr, resp, text) {
+                    //$(".alert-warning").show();
+                    //$this.button('reset');
+                    console.log(xhr, resp, text);
+                }
+            });
+
+    }
     $("#borrar_galeria").on('click', function(){
 
     //var $this = $('.btns');
