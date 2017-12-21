@@ -1,221 +1,47 @@
 <!-- Scripts -->
 <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.min.js"></script> 
+<script type="text/javascript" src="<?= base_url()?>assets/js/functions.js"></script>
+    <script>
+        function borrar(vid, controller) {
+                var idborrar = vid
 
-<script type="text/javascript">
-    $('#pdfseleccionado').bind('click', 'iframe', function(event) { 
-        var url = $(this).attr('src')
-        location.href = url
+                var fdata = new FormData()
 
-     })
-    $("#submit1").on('click', function(){
+                fdata.append("id", idborrar);
+                console.log(fdata)
 
-    //var $this = $('.btns');
-    //$this.button('loading');
-    
-      
-            // send ajax
-            $.ajax({
-                url: '<?= base_url()?>index.php/Admin/iniciar_sesion', // url where to submit the request
-                type : "POST", // type of action POST || GET
-                data : { correo: $('#correo').val(),
-                contrasena: $("#contrasena").val()},
-                //$("#form").serialize(), // post data || get data
-                success : function(result) {
-                    // you can see the result from the console
-                    // tab of the developer tools
-                    console.log(result);
+                $.ajax({
+                        url: '<?=base_url()?>' + controller + '/borrar', // url where to submit the request
+                        type: "POST", // type of action POST || GET
+                        data: fdata, // post data || get data
+                        contentType: false,
+                        processData: false,
+                        success: function(result) {
+                                // you can see the result from the console
+                                // tab of the developer tools
+                                var obj = $.parseJSON(result);
+                                console.log(obj);
+                                if (obj.status == 200) {
+                                        $("#alert-borrado").show();
+                                        setTimeout('document.location.reload()', 2000)
 
-                    window.location.reload();
-                    if(result.status == true) {
-                     // $(".alert-success").show();
-                       //$this.button('reset');
-                       
-                    }
-                },
-                error: function(xhr, resp, text) {
-                    //$(".alert-warning").show();
-                    //$this.button('reset');
-                    console.log(xhr, resp, text);
-                }
-            });
-        });
-    $(document).ready(function() {
-  
-});
-    $("#enviarCorreo").on('click', function(){
-        if ($('#nombre').val()== ''|| $('#email').val()==''|| $('#mensaje').val()== '') {
-            $(".alert-danger1").show()
-            setTimeout(function() {
-               $(".alert-danger1").fadeOut();           
-          },2000);
-          
+                                }
+                                if (obj.status == 300) {
+                                        $("#alert-borradomal").show();
+                                        console.log(result)
+                                        //$this.button('reset');
 
-            return false
+                                }
+                        },
+                        error: function(xhr, resp, text) {
+                                //$(".alert-warning").show();
+                                //$this.button('reset');
+                                console.log(xhr, resp, text);
+                        }
+                });
+
         }
-        console.log($( "#formContacto" ).serialize())
-         $.ajax({
-                url: '<?= base_url()?>Home/EnviarMail', // url where to submit the request
-                type : "POST", // type of action POST || GET
-                data :  $( "#formContacto" ).serialize(), // post data || get data
-                success : function(result) {
-                    // you can see the result from the console
-                    // tab of the developer tools
-                    var obj = $.parseJSON(result);
-                    console.log(obj);
-                    if(obj.status == 200) {
-                      $(".alert-success").show();
-                       
-                    }
-                    if(obj.status == 300) {
-                      $(".alert-danger").show();
-                      console.log(result)
-                       //$this.button('reset');
-                       
-                    }
-                },
-                error: function(xhr, resp, text) {
-                    $(".alert-warning").show();
-                    //$this.button('reset');
-                    console.log(xhr, resp, text);
-                }
-            });
-
-    });
-    function borrar(vid,controller){
-        var idborrar =  vid
-            
-             var fdata = new FormData()
-    
-   fdata.append("id",idborrar);
-       console.log(fdata)
-
-            $.ajax({
-                url: '<?= base_url()?>'+controller+'/borrar', // url where to submit the request
-                type : "POST", // type of action POST || GET
-                data :  fdata, // post data || get data
-                contentType: false,
-                processData: false,
-                success : function(result) {
-                    // you can see the result from the console
-                    // tab of the developer tools
-                    var obj = $.parseJSON(result);
-                    console.log(obj);
-                    if(obj.status == 200) {
-                      $("#alert-borrado").show();
-                       setTimeout('document.location.reload()',2000)
-                       
-                    }
-                    if(obj.status == 300) {
-                      $("#alert-borradomal").show();
-                      console.log(result)
-                       //$this.button('reset');
-                       
-                    }
-                },
-                error: function(xhr, resp, text) {
-                    //$(".alert-warning").show();
-                    //$this.button('reset');
-                    console.log(xhr, resp, text);
-                }
-            });
-
-    }
-    $("#borrar_galeria").on('click', function(){
-
-    //var $this = $('.btns');
-    //$this.button('loading');
-    var id =  $('#id').val();
-            
-             var fdata = new FormData()
-    
-   fdata.append("id",id);
-       console.log(fdata)
-
-            $.ajax({
-                url: '<?= base_url()?>GaleriaAdmin/borrar', // url where to submit the request
-                type : "POST", // type of action POST || GET
-                data :  fdata, // post data || get data
-                contentType: false,
-                processData: false,
-                success : function(result) {
-                    // you can see the result from the console
-                    // tab of the developer tools
-                    var obj = $.parseJSON(result);
-                    console.log(obj);
-                    if(obj.status == 200) {
-                      $("#alert-borrado").show();
-                       setTimeout('document.location.reload()',2000)
-                       
-                    }
-                    if(obj.status == 300) {
-                      $("#alert-borradomal").show();
-                      console.log(result)
-                       //$this.button('reset');
-                       
-                    }
-                },
-                error: function(xhr, resp, text) {
-                    //$(".alert-warning").show();
-                    //$this.button('reset');
-                    console.log(xhr, resp, text);
-                }
-            });
-        });
-    $("#submitAdd").on('click', function(){
-
-    //var $this = $('.btns');
-    //$this.button('loading');
-    $(".alert-primary").show();
-    var url =  $('#url').val();
-            
-             var fdata = new FormData()
-    
-   fdata.append("titulo",$("#titulo").val());
-   fdata.append("descripcion",$("#descripcion").val());
-   $.each($('#file')[0].files, function(i, file) {
-    fdata.append('file-'+i, file);
-});
-       console.log(fdata)
-
-            $.ajax({
-                url: '<?= base_url()?>'+url, // url where to submit the request
-                type : "POST", // type of action POST || GET
-                data :  fdata, // post data || get data
-                contentType: false,
-                processData: false,
-                success : function(result) {
-                    // you can see the result from the console
-                    // tab of the developer tools
-                    var obj = $.parseJSON(result);
-                    console.log(obj);
-                    $(".alert-primary").hide();
-                    if(obj.status == 200) {
-                      $(".alert-success").show();
-                      $("#btnnuevo").attr('class','btn btn-primary collapsed');
-                      $("#btnnuevo").attr('aria-expanded','false');
-                      $("#collapseExample").attr('aria-expanded','false');
-                      $("#collapseExample").attr('class','collapse');
-                      //$("#collapseExample").attr('style','height: 0px; display:none; ');
-                       $("#form")[0].reset();
-                       //$this.button('reset');
-                       setTimeout('document.location.reload()',2000)
-                       
-                    }
-                    if(obj.status == 300) {
-                      $(".alert-danger").show();
-                      console.log(result)
-                       //$this.button('reset');
-                       
-                    }
-                },
-                error: function(xhr, resp, text) {
-                    //$(".alert-warning").show();
-                    //$this.button('reset');
-                    console.log(xhr, resp, text);
-                }
-            });
-        });
-</script>
+    </script>
     
     <script type="text/javascript" src="<?= base_url()?>assets/js/bootstrap.min.js"></script> 
     <!-- Menu jQuery plugin -->

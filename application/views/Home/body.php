@@ -2,106 +2,28 @@
         <section class="slider" id="home">
             <div class="tp-banner">
                 <ul>
-                    <!-- Slide -->
-                    <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
+                    <?php 
+                        $i = 0; 
+                            foreach ($datosg as $gale) {
+                                $i += 1; 
+                                ?>
+                                <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
                             <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="250"
                             data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
                             data-endeasing="Power1.easeIn">
-                                <strong>30 de Enero</strong>
+                                <strong><?=$gale->titulo ?></strong>
                             </h1>
                             
                         </div>
-                        <img src="<?= base_url()?>assets/img/1.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
+                        <img src="<?= base_url()?><?=$gale->url ?>" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
                     </li>
-                    <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
-                        <div class="elements">
-                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="180"
-                            data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Informate</strong>
-                            </h1>
-                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="320"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Y Aprende</strong>
-                            </h1>
-                        </div>
-                        <img src="<?= base_url()?>assets/img/2.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
-                        data-bgrepeat="no-repeat" />
-                    </li>
-                    <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
-                        <div class="elements">
-                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="250"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Contáctanos</strong>
-                            </h1>
-                            <a href="#" class="tp-caption tp-resizeme lfb btn btn-default" style="color: white; " data-x="550" data-y="492"
-                            data-speed="1000" data-start="2000" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn"><h1><strong>Aquí</strong></h1></a>
-                        </div>
-                        <img src="<?= base_url()?>assets/img/3.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
-                        data-bgrepeat="no-repeat" />
-                    </li>
-                    <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
-                        <div class="elements">
-                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="250"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Hazte la prueba</strong>
-                            </h1>
-                            
-                        </div>
-                        <img src="<?= base_url()?>assets/img/4.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
-                        data-bgrepeat="no-repeat" />
-                    </li>
-                    <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
-                        <div class="elements">
-                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="250"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Hazte la prueba</strong>
-                            </h1>
-                            
-                        </div>
-                        <img src="<?= base_url()?>assets/img/5.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
-                        data-bgrepeat="no-repeat" />
-                    </li>
-                    <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
-                        <div class="elements">
-                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="180"
-                            data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Labor Social</strong>
-                            </h1>
-                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="320"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Y Humanitaria</strong>
-                            </h1>
-                        </div>
-                        <img src="<?= base_url()?>assets/img/foto6.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
-                        data-bgrepeat="no-repeat" />
-                    </li>
-                    <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
-                        <div class="elements">
-                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="180"
-                            data-speed="1000" data-start="1700" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Derechos de</strong>
-                            </h1>
-                            <h1 class="tp-caption tp-resizeme center skewtotop title bold " style="color: white; background-color: #54a1a5; padding: 25px ; padding-top: 20px" data-x="400" data-y="320"
-                            data-speed="1000" data-start="1800" data-easing="Power4.easeOut" data-endspeed="500"
-                            data-endeasing="Power1.easeIn">
-                                <strong>Los jovenes</strong>
-                            </h1>
-                        </div>
-                        <img src="<?= base_url()?>assets/img/7.jpg" alt="" data-bgfit="cover" data-bgposition="center top"
-                        data-bgrepeat="no-repeat" />
-                    </li>
-                    <!-- Slide Ends -->
+                                <
+                                            
+                                            <?php  
+                                        } ?>
+                    
                 </ul>
                 <div class="tp-bannertimer"></div>
             </div>

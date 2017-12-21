@@ -2,74 +2,7 @@
 <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.min.js"></script> 
 
 <script type="text/javascript">
-var num= 0
-    $("#addQuestion").click(function(){
-        
-        num = num+1
 
-  $("#pregunta").append("<div class='form-group'><label for='pregunta'>Pregunta "+num+"</label><input type='text' class='form-control' name='pregunta_"+num+"' id='pregunta_"+num+"' placeholder='Ingrese pregunta "+num+"...'></div><label for='respuesta'>Respuestas</label><div class='form-group'><div class='col-md-3'><input type='text' class='form-control' name='respuesta1_"+num+"' id='respuesta1_"+num+"' placeholder='Ingrese respuesta 1...'></div><div class='col-md-3'><input type='text' class='form-control' name='respuesta2_"+num+"' id='respuesta2_"+num+"' placeholder='Ingrese respuesta 2...'></div><div class='col-md-3'><input type='text' class='form-control' name='respuesta3_"+num+"' id='respuesta3_"+num+"' placeholder='Ingrese respuesta 3...'></div><div class='col-md-3'><input type='text' class='form-control' name='respuesta4_"+num+"' id='respuesta4_"+num+"' placeholder='Ingrese respuesta 4...'></div></div>");
-
-  $('#cantidadPreguntas').val(num)
-});
-    
-
-    $("#submitAdd").on('click', function(){
-
-    //var $this = $('.btns');
-    //$this.button('loading');
-    var url =  $('#url').val();
-            
-             var fdata = new FormData()
-    
-   fdata.append("titulo",$("#titulo").val());
-   fdata.append("descripcion",$("#descripcion").val());
-   fdata.append("cantidadPreguntas",$("#cantidadPreguntas").val());
-   for (var i=1 ; i <= num; i++) {
-    fdata.append("pregunta_"+i,$("#pregunta_"+i).val());
-       fdata.append("respuesta1_"+i,$("#respuesta1_"+i).val());
-       fdata.append("respuesta2_",$("#respuesta2_"+i).val());
-       fdata.append("respuesta3_",$("#respuesta3_"+i).val());
-       fdata.append("respuesta4_"+i,$("#respuesta4_"+i).val());
-   }
-       console.log(fdata)
-
-            $.ajax({
-                url: '<?= base_url()?>'+url, // url where to submit the request
-                type : "POST", // type of action POST || GET
-                data :  fdata, // post data || get data
-                contentType: false,
-                processData: false,
-                success : function(result) {
-                    // you can see the result from the console
-                    // tab of the developer tools
-                    var obj = $.parseJSON(result);
-                    console.log(obj);
-                    if(obj.status == 200) {
-                      $(".alert-success").show();
-                      $("#btnnuevo").attr('class','btn btn-primary collapsed');
-                      $("#btnnuevo").attr('aria-expanded','false');
-                      $("#collapseExample").attr('aria-expanded','false');
-                      $("#collapseExample").attr('class','collapse');
-                      //$("#collapseExample").attr('style','height: 0px; display:none; ');
-                       $("#form")[0].reset();
-                       //$this.button('reset');
-                       setTimeout('document.location.reload()',2000)
-                       
-                    }
-                    if(obj.status == 300) {
-                      $(".alert-danger").show();
-                      console.log(result)
-                       //$this.button('reset');
-                       
-                    }
-                },
-                error: function(xhr, resp, text) {
-                    //$(".alert-warning").show();
-                    //$this.button('reset');
-                    console.log(xhr, resp, text);
-                }
-            });
-        });
 </script>
     
     <script type="text/javascript" src="<?= base_url()?>assets/js/bootstrap.min.js"></script> 

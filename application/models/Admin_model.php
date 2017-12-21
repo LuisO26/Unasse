@@ -56,6 +56,24 @@
 
       return  'borrado';
    }
+   public function borrarSliders($data){
+      $this->load->helper("file");
+      $this->db->select('*');
+      $this->db->from('home');
+      $this->db->where('id', $data);
+      $query =  $this->db->get();
+      $datas = $query->result();
+      foreach ($datas as $row ) {
+        # code...
+        delete_files('./././'.$row->url);
+      }
+
+      $this->db->delete('home');
+      $this->db->delete('yotubehome');
+
+
+      return  'borrado';
+   }
    public function SaveImages($data){
 
       $this->db->insert($data['tabla'],$data['datos'] );

@@ -43,29 +43,24 @@ class HomeAdmin extends CI_Controller {
 
    }
 	public function Agregar(){
+    //echo "hola 1";
 		$res='';
-		if ($_POST) {
-			$data= array('tabla'=> "home", 'datos'=> array('titulo' => $_POST['titulo'],
-				'url' => $_POST['url'] ,
-				'fecha' => date('Y-m-d')));
-			
-			$id_galeria = $this->Admin_model->Save($data);
-			
-			# code...
-		} else {
-			# code...
-		}
 		//print_r($files);
+      $cantidad  = $_POST['cantidadSliders'];
+      $urlYoutube  = $_POST['urlYoutube'];
+      $data1= array('tabla'=> "youtubehome", 'datos'=> array('url' => $urlYoutube));
+                        
+      $respuesta0 = $this->Admin_model->Save($data1);
 		$count = count($_FILES);
-		$config['upload_path']          = './././assets/img/galeria';
+		$config['upload_path']          = './././assets/img/sliders';
                 $config['allowed_types']        = 'jpg|png';
                 $config['max_size']             = 2000;
 
                 $this->load->library('upload', $config);
 		
-		 for($i=0; $i<$count; $i++)
+		 for($i=0; $i<$cantidad; $i++)
     {              
-
+      //var_dump($_FILES);
         if ( ! $this->upload->do_upload('file-'.$i))
                 {
                         $res = array('error' => $this->upload->display_errors());
@@ -75,13 +70,12 @@ class HomeAdmin extends CI_Controller {
                 else
                 {
                         $res = array('upload_data' => $this->upload->data());
-                 
-
-                        //$this->load->view('upload_success', $data);
-                        $data = array('tabla'=> "imagenes", 'datos'=> array('nombre' => $res['upload_data']['file_name'] ,
-				'url' => 'assets/img/galeria/'.$res['upload_data']['file_name'],
-				'id_galeria'=> $id_galeria));
-                        $galeria = $this->Admin_model->SaveImages($data);
+                        $e = $i+1;
+                        $data= array('tabla'=> "home", 'datos'=> array('titulo' => $_POST['slider_'.$e],
+                          'url' => 'assets/img/sliders/'.$res['upload_data']['file_name'] ,
+                          'fecha' => date('Y-m-d')));
+                        
+                        $respuesta1 = $this->Admin_model->Save($data);
                         
 			
                         
@@ -95,7 +89,6 @@ class HomeAdmin extends CI_Controller {
     	$result  = array('status' => 300 , 'mensaje'=> 'ERROR' );
     	echo json_encode($result);
     }
-    
 		
 
                 

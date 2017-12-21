@@ -29,16 +29,16 @@
                                         <a href="#">Secciones</a> 
                                         <ul class="dropdown-menu">
                                                 <li>
-                                                <a href="<?=base_url()?>/DescargasAdmin">Descargas</a>
+                                                <a href="<?=base_url()?>DescargasAdmin">Descargas</a>
                                                 </li>
                                                 <li>
-                                                <a href="<?=base_url()?>/HomeAdmin">Configurar Inicio</a>
+                                                <a href="<?=base_url()?>HomeAdmin">Configurar Inicio</a>
                                                 </li>
                                                 <li>
-                                                <a href="<?=base_url()?>/GaleriaAdmin">Galería</a>
+                                                <a href="<?=base_url()?>GaleriaAdmin">Galería</a>
                                                 </li>
                                                 <li>
-                                                <a href="<?=base_url()?>/PruebasAdmin">Pruebas</a>
+                                                <a href="<?=base_url()?>PruebasAdmin">Pruebas</a>
                                                 </li>
                                             </ul>
                                         <li>

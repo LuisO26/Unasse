@@ -4,7 +4,7 @@
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <strong>Listo!</strong> Los datos se guardaron exitosamente.
 </div>
-<div style="display: none"  class=" alert alert-danger alert-dismissible" role="alert">
+<div style="display: none"  class=" alert alert-danger alert-dismissible" id="alert-danger" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <strong>Error!</strong> Problemas al guardar los datos, intente de nuevo.
 </div>
@@ -22,29 +22,21 @@
 				  <div class="well">
 					<form id="form" enctype="multipart/form-data">
 						<input type="hidden" id="url" value="<?= $url ?>">
-						<input type="hidden" id="cantidadPreguntas" value="">
-				  <div class="form-group">
-					<label for="titulo">Titulo</label>
-					<input type="text" class="form-control" name="titulo" id="titulo" placeholder="Ingrese titulo de prueba...">
+						<input type="hidden" id="cantidadSliders" value="">
+						 <div class="form-group">
+					<label for="descripcion">Link de Video Youtube</label>
+					<input type="text" class="form-control" name="urlYoutube" id="urlYoutube" placeholder="Ingrese El link del video de Youtube">
 				  </div>
-				  <div class="form-group">
-					<label for="descripcion">Descripción</label>
-					<input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Ingrese una pequeña descripción...">
-				  </div>
-				  <div class="form-group">
-					<label for="exampleInputFile">Ingrese imagenes</label>
-					<input type="file" name="file[]" id="file" multiple>
-				  </div>
-				  <div id="pregunta" >
+				  <div id="Slider" >
 				  	
 				  	
 				  </div>
-				  <button type="button" id="addQuestion"  class="btn btn-default">Agregar Imagen a carrusel </button>
+				  <button type="button" id="addSlider"  class="btn btn-default">Agregar Imagen a carrusel </button>
 				  
 				  
 
 				  
-				  <center><button type="button" id="submitAdd"  class="btn btn-primary">Crear </button></center>
+				  <center><button type="button" id="submitAddSliders"  class="btn btn-primary">Crear </button></center>
 				</form>
 				  </div>
 				</div>
@@ -56,7 +48,6 @@
 						<tr>
 						  <th>#</th>
 						  <th>Titulo</th>
-						  <th>Descripción</th>
 						  <th>Cantidad de imagenes</th>
 						  <th>Acciones</th>
 						</tr>
@@ -70,9 +61,8 @@
 							<tr>
 						  <th scope="row"><?= $i?></th>
 						  <td><?= $gale->titulo;?></td>
-						  <td><?= $gale->descripcion;?></td>
 						  <td><?= $gale->url;?></td>
-						  <td><a href="#">borrar</a></td>
+						  <td><center><button style="color:red;" type="button" onClick="borrar(<?=$gale->id?>, 'DescargasAdmin')" id="borrar_descarga"><i class="fa fa-trash" aria-hidden="true"></i></button></center></td>
 						</tr>
 											
 											<?php  
@@ -80,5 +70,13 @@
 						
 					  </tbody>
 					</table>
+</div>
+<div style="display: none" class=" alert alert-success alert-dismissible" id="alert-borrar" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Listo!</strong> Galeria Eliminada.
+</div>
+<div style="display: none"  class=" alert alert-danger alert-dismissible" id="alert-borrarmal" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Error!</strong> Problemas al eliminar galeria, intente de nuevo.
 </div>
 </section>
