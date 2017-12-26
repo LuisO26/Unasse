@@ -3,9 +3,7 @@
             <div class="tp-banner">
                 <ul>
                     <?php 
-                        $i = 0; 
                             foreach ($datosg as $gale) {
-                                $i += 1; 
                                 ?>
                                 <li data-delay="7000" data-transition="fade" data-slotamount="7" data-masterspeed="2000">
                         <div class="elements">
@@ -99,11 +97,19 @@
             <div align="center"  class="container-fluid who-we-are">
                 <div class="row">
                     <div class="col-md-12 pad-60">
-                        <div class="section-title text-center" data-animation="fadeInUp">
+                        <?php 
+                            foreach ($datosg1 as $gale) {
+                                ?>
+                            <div class="section-title text-center" data-animation="fadeInUp">
                             <!-- Title -->
-                            <h2 class="title text-uppercase">Dia internacional contra la violencia hacia las mujeres</h2>
+                            <h2 class="title text-uppercase"><?=$gale->titulo?></h2>
                         </div>
-                        <iframe class="youtube-player" type="text/html" width="900" height="485" src="https://www.youtube.com/embed/5MOwgujGyBM" frameborder="0"></iframe>
+                        <iframe class="youtube-player" type="text/html" width="900" height="485" src="https://www.youtube.com/embed/<?=$gale->idVideo?>" frameborder="0"></iframe>
+                                            
+                                            <?php  
+                                        } ?>
+                        
+                        
                         
                     </div>
                 </div>

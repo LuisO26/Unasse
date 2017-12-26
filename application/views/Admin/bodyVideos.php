@@ -16,25 +16,6 @@
 
 
 	<div class="container">
-		<form id="form" enctype="multipart/form-data">
-						 
-						 	<?php 
-							foreach ($datosgvideo as $gale) {
-								?>
-								<div class="form-group">
-							<label for="descripcion">Titulo a mostrar en el video</label>
-					<input type="text" class="form-control" value="<?= $gale->titulo ?>" name="tituloVideo" id="tituloVideo" placeholder="Ingrese El Titulo a mostar del video de Youtube">
-					</div>
-								<div class="form-group">
-							<label for="descripcion">Link de Video Youtube</label>
-					<input type="text" class="form-control" value="<?= $gale->idVideo ?>" name="urlYoutube" id="urlYoutube" placeholder="Ingrese El link del video de Youtube">
-					</div>
-											
-											<?php  
-										} ?>
-				  
-				  <center><button type="button" id="submitVideo"  class="btn btn-primary">Cambiar Video Youtube </button></center>
-				</form>
 		<a class="btn btn-primary" id="btnnuevo" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 				  Nuevo
 				</a>
@@ -42,18 +23,18 @@
 				  <div class="well">
 					<form id="form" enctype="multipart/form-data">
 						<input type="hidden" id="url" value="<?= $url ?>">
-						<input type="hidden" id="cantidadSliders" value="">
+						<input type="hidden" id="cantidadVideos" value="">
 						 
-				  <div id="Slider" >
+				  <div id="Video" >
 				  	
 				  	
 				  </div>
-				  <button type="button" id="addSlider"  class="btn btn-default">Agregar Imagen a carrusel </button>
+				  <button type="button" id="addVideo"  class="btn btn-default">Agregar Video </button>
 				  
 				  
 
 				  
-				  <center><button type="button" id="submitAddSliders"  class="btn btn-primary">Crear </button></center>
+				  <center><button type="button" id="submitAddVideos"  class="btn btn-primary">Crear </button></center>
 				</form>
 				  </div>
 				</div>
@@ -66,6 +47,7 @@
 						  <th>#</th>
 						  <th>Titulo</th>
 						  <th>Cantidad de imagenes</th>
+						  <th>Acciones</th>
 						</tr>
 					  </thead>
 					  <tbody>
@@ -78,6 +60,7 @@
 						  <th scope="row"><?= $i?></th>
 						  <td><?= $gale->titulo;?></td>
 						  <td><?= $gale->url;?></td>
+						  <td><center><button style="color:red;" type="button" onClick="borrar(<?=$gale->id?>, 'DescargasAdmin')" id="borrar_descarga"><i class="fa fa-trash" aria-hidden="true"></i></button></center></td>
 						</tr>
 											
 											<?php  
@@ -88,10 +71,10 @@
 </div>
 <div style="display: none" class=" alert alert-success alert-dismissible" id="alert-borrar" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Listo!</strong> Galeria Eliminada.
+  <strong>Listo!</strong> Video Eliminada.
 </div>
 <div style="display: none"  class=" alert alert-danger alert-dismissible" id="alert-borrarmal" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Error!</strong> Problemas al eliminar galeria, intente de nuevo.
+  <strong>Error!</strong> Problemas al eliminar Video, intente de nuevo.
 </div>
 </section>

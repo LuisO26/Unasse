@@ -20,10 +20,17 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
+		$datosg = $this->Admin_model->getData('home');
+		$datosg1 = $this->Admin_model->getData('youtubehome');
+         //$data = array();
+         //$data['nombre'] = $this->session->userdata('nombre');
+         
 		$data = array( "header" => "Inicio");
+		$data['datosg'] = $datosg;
+		$data['datosg1'] = $datosg1;
 		$this->load->view('Home/header', $data);
 		$this->load->view('Home/nav');
-		$this->load->view('Home/body');
+		$this->load->view('Home/body', $data);
 		$this->load->view('Home/footer');
 		$this->load->view('Home/scripts');
 	}

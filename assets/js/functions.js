@@ -15,10 +15,22 @@ $(document).ready(function() {
 
                 $('#cantidadSliders').val(num1)
         });
+        var num2 = 0
+        $("#addVideo").click(function() {
+
+                num2 = num2 + 1
+
+                $("#Video").append("<div class='form-group'><label for='slider'>Video " + num2 + "</label><input type='text' class='form-control' name='slider_" + num2 + "' id='slider_" + num2 + "' placeholder='Ingrese texto de imagen " + num2 + "...'></div><div class='form-group'><label for='exampleInputFile'>Ingrese imagenes</label><input type='text' class='form-control' name='video_" + num2 + "' ></div>");
+
+                $('#cantidadVideos').val(num2)
+        });
 
 
         $("#submitAddSliders").on('click', function() {
-
+            $(".alert-primary1").show()
+                        setTimeout(function() {
+                                $(".alert-primary1").fadeOut();
+                        }, 2000);
                 //var $this = $('.btns');
                 //$this.button('loading');
                 var url = $('#url').val();
@@ -28,7 +40,7 @@ $(document).ready(function() {
                 for (var i = 1; i <= num1; i++) {
                         fdata.append("slider_" + i, $("#slider_" + i).val());
                         $.each($('#file'+ i)[0].files, function(a, file) {
-                        fdata.append('file-' + a, file);
+                        fdata.append('file-' +i, file);
                 })
                 }
                 console.log(fdata)
@@ -168,6 +180,41 @@ $(document).ready(function() {
                                 if (result.status == true) {
                                         // $(".alert-success").show();
                                         //$this.button('reset');
+
+                                }
+                        },
+                        error: function(xhr, resp, text) {
+                                //$(".alert-warning").show();
+                                //$this.button('reset');
+                                console.log(xhr, resp, text);
+                        }
+                });
+        });
+        $("#submitVideo").on('click', function() {
+
+                //var $this = $('.btns');
+                //$this.button('loading');
+
+
+                // send ajax
+                $.ajax({
+                        url: baseUrl + 'HomeAdmin/Cambiar_Video', // url where to submit the request
+                        type: "POST", // type of action POST || GET
+                        data: {
+                                idVideo: $('#urlYoutube').val(),
+                                titulo: $("#tituloVideo").val()
+                        },
+                        //$("#form").serialize(), // post data || get data
+                        success: function(result) {
+                                // you can see the result from the console
+                                // tab of the developer tools
+                                console.log(result);
+                                var result = $.parseJSON(result);
+                                
+                                if (result.status == 200) {
+                                        // $(".alert-success").show();
+                                        //$this.button('reset');
+                                        window.location.reload();
 
                                 }
                         },

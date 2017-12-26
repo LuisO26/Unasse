@@ -18,6 +18,25 @@
       $id = $this->db->insert_id();
       return  $id;
    }
+   public function SaveSliders($data){
+
+      $this->db->insert($data['tabla'],$data['datos'] );
+      $id = $this->db->insert_id();
+      return  $id;
+   }
+   public function actualizarVideo($titulo,$idVideo){
+
+      $data = array(
+        'idVideo' => $idVideo,
+        'titulo' => $titulo
+        
+);
+      $this->db->where('id', 1);
+      $this->db->update('youtubehome', $data);
+
+      return "modificado";
+
+   }
    public function borrarPdf($data){
       $this->load->helper("file");
       $this->db->select('*');
@@ -56,20 +75,16 @@
 
       return  'borrado';
    }
-   public function borrarSliders($data){
+   public function borrarSliders(){
       $this->load->helper("file");
-      $this->db->select('*');
-      $this->db->from('home');
-      $this->db->where('id', $data);
-      $query =  $this->db->get();
+      $query =  $this->db->get('home');
       $datas = $query->result();
       foreach ($datas as $row ) {
         # code...
         delete_files('./././'.$row->url);
       }
 
-      $this->db->delete('home');
-      $this->db->delete('yotubehome');
+      $this->db->empty_table('home');
 
 
       return  'borrado';

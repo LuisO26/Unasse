@@ -20,6 +20,19 @@
                             </a>
                         </div>
                     </div>
+                    <div class="col-sm-6 col-md-4" data-animation="fadeInLeft">
+                        <div class="work-process-box square">
+                            <a href="<?=base_url()?>VideosAdmin">
+                            <div class="process-content">
+                                <div class="item-number square"><i class="icon-star6"></i></div>
+                                <!-- Title -->
+                                <h4 class="title">Videos</h4>
+                                <!-- Description -->
+                                <p>Agregar galería de videos</p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
                      <div class="col-sm-6 col-md-4" data-animation="fadeInLeft">
                         <div class="work-process-box square">
                             <a href="<?=base_url()?>DescargasAdmin">
