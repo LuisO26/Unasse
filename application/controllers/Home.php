@@ -71,6 +71,7 @@ class Home extends CI_Controller {
 		
 		
 	}
+	
 	public function EnviarMail(){
 $email= $_POST['email'];
 $nombre = $_POST['nombre'];

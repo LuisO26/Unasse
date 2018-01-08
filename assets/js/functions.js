@@ -225,6 +225,45 @@ $(document).ready(function() {
                         }
                 });
         });
+        $("#enviarDatos").on('click', function() {
+                if ($('#nombre_completo').val() == '' || $('#estado').val() == '' || $('#municipio').val() == '' || $('#observaciones').val() == '') {
+                        $(".alert-danger1").show()
+                        setTimeout(function() {
+                                $(".alert-danger1").fadeOut();
+                        }, 2000);
+
+
+                        return false
+                }
+                console.log($("#formDato").serialize())
+                $.ajax({
+                        url: baseUrl + 'DatosAdmin/agregar', // url where to submit the request
+                        type: "POST", // type of action POST || GET
+                        data: $("#formDato").serialize(), // post data || get data
+                        success: function(result) {
+                                // you can see the result from the console
+                                // tab of the developer tools
+                                var obj = $.parseJSON(result);
+                                console.log(obj);
+                                if (obj.status == 200) {
+                                        $(".alert-success").show();
+                                         console.log(obj)
+                                }
+                                if (obj.status == 300) {
+                                        $(".alert-danger").show();
+                                        console.log(obj)
+                                        //$this.button('reset');
+
+                                }
+                        },
+                        error: function(xhr, resp, text) {
+                                $(".alert-danger").show();
+                                //$this.button('reset');
+                                console.log(xhr, resp, text);
+                        }
+                });
+
+        });
 
         $("#enviarCorreo").on('click', function() {
                 if ($('#nombre').val() == '' || $('#email').val() == '' || $('#mensaje').val() == '') {

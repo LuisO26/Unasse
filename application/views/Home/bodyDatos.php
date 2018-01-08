@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-pad-20 bottom-pad-20 text-left white">
-                        <h3 class="text-uppercase inline-block tb-margin-20" data-animation="fadeInUp">Contacto </h3>
+                        <h3 class="text-uppercase inline-block tb-margin-20" data-animation="fadeInUp">Envianos tu caso </h3>
                         
                     </div>
                 </div>
@@ -14,49 +14,106 @@
                     <div class="row">
                     <div class="contact-form">
                         <!-- Form Begins -->
-                        <form role="form" name="contactform" id="contactform" method="post" action="php/contact-form.php">
+                        <form  name="formDato" id="formDato" >
                                 <div class="col-md-6">
+                                    <input type="hidden" class="form-control" id="tabla" name="tabla" value="datosPublicos">
                                     <!-- Field 1 -->
-                                    <div class="input-text form-group">
-                                        <input type="text" name="contact_name" class="input-name form-control" placeholder="Nombre Completo..." />
-                                    </div>
+                                    <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Nombre*</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="nombre_completo" id="nombre_completo" placeholder="Nombre completo...">
+                    </div>
+                  </div>
                                     <!-- Field 2 -->
-                                    <div class="input-email form-group">
-                                        <input type="email" name="contact_email" class="input-email form-control" placeholder="Correo..."/>
-                                    </div>
-                                    <!-- Field 3 -->
-                                    <div class="input-email form-group">
-                                        <input type="text" name="contact_phone" class="input-phone form-control" placeholder="Teléfono..."/>
-                                    </div>
+                                    <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Edad</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="edad" name="edad" placeholder="Edad...">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Ocupación</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="ocupacion" name="ocupacion" placeholder="Ocupación">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Derecho Violentado</label>
+                    <div class="col-sm-10">
+                      <select name="derecho_violentado" class="form-control">
+                  <option value="vida" >VIDA</option>
+                  <option value="salud" >SALUD </option>
+                  <option value="educacion">EDUCACION</option>
+                  <option value="decidir">DECIDIR</option>
+                  <option value="morales">MORALES</option>
+                  <option value="trabajo">TRABAJO</option>
+                  <option value="familia">FAMILIA</option>
+                  <option value="sexuales">SEXUALES</option>
+                  <option value="reproductivos">REPRODUCTIVOS</option>
+                  <option value="conexos">CONEXOS</option>
+
+                </select>
+                    </div>
+                  </div>
                                 </div>
                                 <div class="col-md-6">
+                                    
                                     <!-- Field 4 -->
-                                    <div class="textarea-message form-group">
-                                        <textarea name="contact_message" class="textarea-message height-82 form-control" placeholder="Escribas su mensaje..." rows="2" ></textarea>
-                                    </div>
+                                    <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Genero</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="genero" name="genero" placeholder="Genero...">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Estado*</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="estado" name="estado" placeholder="Estado...">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Municipio*</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="municipio" name="municipio" placeholder="Municipio...">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="email" name="email" placeholder="Email...">
+                    </div>
+                  </div>
+                </div>
                                     <!-- Button -->
-                                    <button class="btn btn-default btn-block" type="submit">Enviar<i class="icon-paper-plane"></i></button>
+                                    
+                                <div class="col-md-12">
+                                    <div class="textarea-message form-group">
+                                        <textarea name="observaciones" id="observaciones" class="textarea-message height-82 form-control" placeholder="Escriba sus caso..." rows="4" ></textarea>
+                                    </div>
+                                    <button class="btn btn-default btn-block" id="enviarDatos" type="button">Enviar<i class="icon-paper-plane"></i></button>
                                 </div>
-                            </div>
                         </form>
                         <!-- Form Ends -->
                     </div>
                     
                 </div>
+                <div class="container">
+        <div style="display: none" class=" alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Listo!</strong> Mensaje Enviado.
+</div>
+<div style="display: none" class=" alert alert-info alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Enviando!</strong> Enviando mensaje...
+</div>
+<div style="display: none"  class=" alert alert-danger alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Error!</strong> Problemas al enviar mensaje, intente de nuevo mas tarde.
+</div>
+<div style="display: none"  class=" alert alert-warning alert-danger1 alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Revisar!</strong> Debes de llenar los campos con *.
+</div>
+    </div>
             </section><!-- page-section -->
-            <section id="map">
-                <div class="map-section">
-                    <div class="map-canvas"
-                        data-zoom="12"
-                        data-lat="-35.2835"
-                        data-lng="149.128"            
-                        data-type="roadmap"
-                        data-hue="#ffc400"
-                        data-title="Austin"
-                        data-content="Company Name<br>
-                        Contact: +012 (345) 6789<br>
-                        <a href='mailto:info@youremail.com'>info@youremail.com</a>"                         
-                        style="height: 376px;">
-                    </div>
-                </div>
-            </section> <!-- map -->
+            
