@@ -17,7 +17,6 @@
                         <img src="<?= base_url()?><?=$gale->url ?>" alt="" data-bgfit="cover" data-bgposition="center top"
                         data-bgrepeat="no-repeat" />
                     </li>
-                                <
                                             
                                             <?php  
                                         } ?>

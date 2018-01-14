@@ -82,6 +82,14 @@
 </div>
     </div>
             </section><!-- page-section -->
+            <div id="get-quote" class="white bg-color get-a-quote black text-center" data-appear-animation="fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 white">Están violando tus derechos 
+                    <a class="black" href="<?=base_url()?>Home/DatosInternos">¡REPORTALO!</a></div>
+                </div>
+            </div>
+        </div>
             <section id="map">
                 <div class="map-section">
                     <div class="map-canvas"

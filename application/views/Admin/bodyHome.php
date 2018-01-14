@@ -28,6 +28,7 @@
 								<div class="form-group">
 							<label for="descripcion">Link de Video Youtube</label>
 					<input type="text" class="form-control" value="<?= $gale->idVideo ?>" name="urlYoutube" id="urlYoutube" placeholder="Ingrese El link del video de Youtube">
+					<small id="emailHelp" class="form-text text-muted">Ejemplo: (https://www.youtube.com/watch?v=EBt_88nxG4c) insertar EBt_88nxG4c</small>
 					</div>
 											
 											<?php  

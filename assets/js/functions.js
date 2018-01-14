@@ -55,7 +55,7 @@ $(document).ready(function() {
                                 // you can see the result from the console
                                 // tab of the developer tools
                                 console.log(result)
-                                //var result = $.parseJSON(result);
+                                var result = $.parseJSON(result);
                                 //console.log(obj);
                                 if (result.status == 200) {
                                   console.log(result)

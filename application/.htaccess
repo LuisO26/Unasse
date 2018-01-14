@@ -1,6 +1,31 @@
-<IfModule authz_core_module>
-	Require all denied
+#<IfModule mod_rewrite.c>
+
+# RewriteEngine on
+# RewriteCond $1 !^(index\.php)
+# RewriteRule ^(.*)$ index.php/$1 [L]
+
+#</IfModule>
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
 </IfModule>
-<IfModule !authz_core_module>
-	Deny from all
+<IfModule mod_rewrite.c>
+
+ # allow_override On
+ # mod_rewrite is installed
+ 
+ RewriteEngine on
+ 
+#RewriteBase /
+ RewriteCond $1 !^(index\.php|robots\.txt|sitemap\.xml|assets|css|js)
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+
+ <IfModule mod_php5.c>
+ RewriteRule ^(.*)$ index.php/$1 [L]
+ </IfModule>
+
+ <IfModule !mod_php5.c>
+ RewriteRule ^(.*)$ index.php?/$1 [L]
+ </IfModule>
+ 
 </IfModule>
