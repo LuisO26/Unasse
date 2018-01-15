@@ -27,6 +27,7 @@
     <!-- Portfolio Filter -->
      
     <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.mixitup.min.js"></script> 
+    <script type="text/javascript" src="<?= base_url()?>assets/js/functions.js"></script>
     <!-- Animations -->
      
     <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.appear.js"></script> 

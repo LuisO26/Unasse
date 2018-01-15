@@ -71,6 +71,24 @@ class Home extends CI_Controller {
 		
 		
 	}
+	public function Videos()
+	{
+			$i = 0;
+		$datosg = $this->Admin_model->getData('videos');
+		
+         //$data = array();
+         //$data['nombre'] = $this->session->userdata('nombre');
+         $data1['datosg'] = $datosg;
+		$data = array( "header" => "Videos");
+		$this->load->view('Home/header', $data);
+		$this->load->view('Home/nav');
+		$this->load->view('Home/bodyVideos',$data1);
+		$this->load->view('Home/footer');
+		$this->load->view('Home/scripts');
+
+		
+		
+	}
 	
 	public function EnviarMail(){
 $email= $_POST['email'];

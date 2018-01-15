@@ -75,6 +75,14 @@
 
       return  'borrado';
    }
+   public function borrarVideos($data){
+
+      $this->db->where('id', $data);
+      $this->db->delete('videos');
+
+
+      return  'borrado';
+   }
    public function borrarSliders(){
       $this->load->helper("file");
       $query =  $this->db->get('home');

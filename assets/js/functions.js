@@ -20,9 +20,67 @@ $(document).ready(function() {
 
                 num2 = num2 + 1
 
-                $("#Video").append("<div class='form-group'><label for='slider'>Video " + num2 + "</label><input type='text' class='form-control' name='slider_" + num2 + "' id='slider_" + num2 + "' placeholder='Ingrese texto de imagen " + num2 + "...'></div><div class='form-group'><label for='exampleInputFile'>Ingrese imagenes</label><input type='text' class='form-control' name='video_" + num2 + "' ></div>");
+                $("#Video").append("<div class='form-group'><label for='video'>Video " + num2 + "</label><input type='text' class='form-control' name='tvideo_" + num2 + "' id='tvideo_" + num2 + "' placeholder='Ingrese titulo video " + num2 + "...'></div><div class='form-group'><label for='exampleInputFile'>Ingrese Id Video</label><input type='text' class='form-control' name='video_" + num2 + "' id='video_" + num2 + "' ></div>");
 
                 $('#cantidadVideos').val(num2)
+        });
+        $("#submitAddVideos").on('click', function() {
+            $(".alert-primary1").show()
+                        setTimeout(function() {
+                                $(".alert-primary1").fadeOut();
+                        }, 2000);
+                //var $this = $('.btns');
+                //$this.button('loading');
+                var url = $('#url').val();
+                console.log(num2)
+                var fdata = new FormData()
+                fdata.append("cantidadVideos", $("#cantidadVideos").val());
+                for (var i = 1; i <= num2; i++) {
+                        fdata.append("video_" + i, $("#video_" + i).val());
+                        fdata.append("tvideo_" + i, $("#tvideo_" + i).val());
+                        
+                }
+                console.log(fdata)
+
+                $.ajax({
+                        url: baseUrl + url, // url where to submit the request
+                        type: "POST", // type of action POST || GET
+                        data: fdata, // post data || get data
+                        contentType: false,
+                        processData: false,
+                        success: function(result) {
+                                // you can see the result from the console
+                                // tab of the developer tools
+                                console.log(result)
+                                var result = $.parseJSON(result);
+                                //console.log(obj);
+                                if (result.status == 200) {
+                                  console.log(result)
+                                        $(".alert-success").show();
+                                        $("#btnnuevo").attr('class', 'btn btn-primary collapsed');
+                                        $("#btnnuevo").attr('aria-expanded', 'false');
+                                        $("#collapseExample").attr('aria-expanded', 'false');
+                                        $("#collapseExample").attr('class', 'collapse');
+                                        //$("#collapseExample").attr('style','height: 0px; display:none; ');
+                                        $("#form")[0].reset();
+                                        //$this.button('reset');
+                                        setTimeout('document.location.reload()', 2000)
+
+                                }
+                                if (result.status == 300) {
+                                        $("#alert-danger").show();
+                                        console.log(result)
+                                        //$this.button('reset');
+
+                                }
+                                console.log(result)
+                        },
+                        error: function(xhr, resp, text) {
+                                //$(".alert-warning").show();
+                                //$this.button('reset');
+                                console.log(xhr, resp, text);
+                        }
+                });
         });
 
 

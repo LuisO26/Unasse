@@ -46,7 +46,6 @@
 						<tr>
 						  <th>#</th>
 						  <th>Titulo</th>
-						  <th>Cantidad de imagenes</th>
 						  <th>Acciones</th>
 						</tr>
 					  </thead>
@@ -59,8 +58,7 @@
 							<tr>
 						  <th scope="row"><?= $i?></th>
 						  <td><?= $gale->titulo;?></td>
-						  <td><?= $gale->url;?></td>
-						  <td><center><button style="color:red;" type="button" onClick="borrar(<?=$gale->id?>, 'DescargasAdmin')" id="borrar_descarga"><i class="fa fa-trash" aria-hidden="true"></i></button></center></td>
+						  <td><center><button style="color:red;" type="button" onClick="borrar(<?=$gale->id?>, 'VideosAdmin')" id="borrar_descarga"><i class="fa fa-trash" aria-hidden="true"></i></button></center></td>
 						</tr>
 											
 											<?php  
