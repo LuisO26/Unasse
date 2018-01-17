@@ -26,8 +26,15 @@
                                             
                                         </li>
                                         <li class="">
-                                            <a href="<?=base_url()?>Home/Galeria">Galería</a>
-                                            
+                                            <a href="#">Galería</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                <a href="<?=base_url()?>Home/Galeria">Imagenes</a>
+                                                </li>
+                                                <li>
+                                                <a href="<?=base_url()?>Home/Videos">Videos</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                         <a href="#">¿Quiénes somos?</a> 

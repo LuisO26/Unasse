@@ -148,11 +148,13 @@ $result  = array('status' => 200 , 'mensaje'=> 'Mensaje enviado.' );
 		$this->load->view('Home/scripts');
 	}
 	public function Pruebas()
-	{
+	{	$datosg = $this->Admin_model->getData('pruebas');
+		
 		$data = array( "header" => "Pruebas");
+		$data['datosg']= $datosg;
 		$this->load->view('Home/header', $data);
 		$this->load->view('Home/nav');
-		$this->load->view('Home/bodyPruebas');
+		$this->load->view('Home/bodyPruebas',$data);
 		$this->load->view('Home/footer');
 		$this->load->view('Home/scripts');
 	}

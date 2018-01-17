@@ -34,7 +34,7 @@ class PruebasAdmin extends CI_Controller {
 
 		$res='';
     $respid= '';
-    var_dump($_POST);
+    //var_dump($_POST);
 		if ($_POST) {
       $cantidad= $_POST['cantidadPreguntas'];
       $count = count($_FILES);
