@@ -33,7 +33,7 @@
 				  </div>
 				  <div class="form-group">
 					<label for="exampleInputFile">Ingrese imagenes</label>
-					<input type="file" name="file[]" id="file" multiple>
+					<input type="file" name="file[]" id="file1" >
 				  </div>
 				  <div id="pregunta" >
 				  	
@@ -44,7 +44,7 @@
 				  
 
 				  
-				  <center><button type="button" id="submitAdd"  class="btn btn-primary">Crear </button></center>
+				  <center><button type="button" id="submitAddTest"  class="btn btn-primary">Crear </button></center>
 				</form>
 				  </div>
 				</div>
@@ -57,7 +57,7 @@
 						  <th>#</th>
 						  <th>Titulo</th>
 						  <th>Descripción</th>
-						  <th>Cantidad de imagenes</th>
+						  <th>Fecha</th>
 						  <th>Acciones</th>
 						</tr>
 					  </thead>
@@ -71,7 +71,7 @@
 						  <th scope="row"><?= $i?></th>
 						  <td><?= $gale->titulo;?></td>
 						  <td><?= $gale->descripcion;?></td>
-						  <td><?= $gale->url;?></td>
+						  <td><?= $gale->fecha;?></td>
 						  <td><a href="#">borrar</a></td>
 						</tr>
 											

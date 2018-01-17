@@ -167,17 +167,20 @@ $(document).ready(function() {
                 fdata.append("titulo", $("#titulo").val());
                 fdata.append("descripcion", $("#descripcion").val());
                 fdata.append("cantidadPreguntas", $("#cantidadPreguntas").val());
+                $.each($('#file1')[0].files, function(a, file) {
+                        fdata.append('file1' , file);
+                })
                 for (var i = 1; i <= num; i++) {
                         fdata.append("pregunta_" + i, $("#pregunta_" + i).val());
                         fdata.append("respuesta1_" + i, $("#respuesta1_" + i).val());
-                        fdata.append("respuesta2_", $("#respuesta2_" + i).val());
-                        fdata.append("respuesta3_", $("#respuesta3_" + i).val());
+                        fdata.append("respuesta2_"+i, $("#respuesta2_" + i).val());
+                        fdata.append("respuesta3_"+i, $("#respuesta3_" + i).val());
                         fdata.append("respuesta4_" + i, $("#respuesta4_" + i).val());
                 }
                 console.log(fdata)
 
                 $.ajax({
-                        url: '<?= base_url()?>' + url, // url where to submit the request
+                        url: baseUrl + url, // url where to submit the request
                         type: "POST", // type of action POST || GET
                         data: fdata, // post data || get data
                         contentType: false,

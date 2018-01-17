@@ -122,6 +122,20 @@
 
       
    }
+   public function saveTest(){
+      $this->db->select('*');
+      $this->db->from('imagenes');
+      $this->db->where('id_galeria', $data);
+      $query =  $this->db->get();
+       if ( $query->num_rows() > 0 )
+    {
+        $row = $query->row_array();
+        return $row;
+    }
+
+
+      
+   }
    public function getImagenesById($data){
       $this->db->select('*');
       $this->db->from('imagenes');
