@@ -20,12 +20,13 @@
                             foreach ($datosg as $gale) {
                                 $i += 1; 
                                 ?>
+                                <input type="hidden" id="<?= $gale->id ?>">
                             <div class="col-sm-4" data-animation="fadeInLeft">
                         <p class="text-center opacity">
-                           <a  data-toggle="modal" data-target="#myModal" href="#"> <img src="<?=base_url()?><?=$gale->url?>" width="370" height="185" alt="" /></a>
+                           <a  data-toggle="modal" data-target="#myModal" onClick="abrir(<?=$gale->id?>)" href="#"> <img src="<?=base_url()?><?=$gale->url?>" width="370" height="185" alt="" /></a>
                         </p>
                         <h4 class="bottom-margin-10 text-center">
-                            <a  data-toggle="modal" data-target="#myModal" id="<?=$gale->id?>" class="black"><?=$gale->titulo?></a>
+                            <a  data-toggle="modal" data-target="#myModal" onClick="abrir(<?=$gale->id?>)" class="black"><?=$gale->titulo?></a>
                         </h4>
                         <p><?=$gale->descripcion?></p>
                         <div class="meta top-pad-10">
@@ -40,11 +41,14 @@
                     
                     
                 </div>
+                <input type='hidden' name='numeroPregunta' id='numeroPregunta'  >
+                <input type='hidden' name='cantidadP' id='cantidadP'  >
                 
                 <div class="clearfix"></div>
 
             </div>
         </section> 
+
 
         <div class="modal fade top-pad-70" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -53,12 +57,14 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
-      <div class="modal-body">
+      <div class="modal-body " >
+        <div class='row ' id="preguntas-modal">
+        </div>
        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" id="bSiguiente">Siguiente</button>
       </div>
     </div>
   </div>

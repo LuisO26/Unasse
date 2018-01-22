@@ -122,6 +122,25 @@
 
       
    }
+   public function getPreguntasById($data){
+      $this->db->select('*');
+      $this->db->from('preguntas_pruebas');
+      $this->db->where('id_pruebas', $data);
+      $query =  $this->db->get();
+      if ($query) {
+        # code...
+        
+        return $query->result();
+      } else {
+        # code...
+        return $query->result();
+      }
+      
+        
+
+
+      
+   }
    public function saveTest(){
       $this->db->select('*');
       $this->db->from('imagenes');

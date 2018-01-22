@@ -147,8 +147,27 @@ $result  = array('status' => 200 , 'mensaje'=> 'Mensaje enviado.' );
 		$this->load->view('Home/footer');
 		$this->load->view('Home/scripts');
 	}
+	public function Preguntas(){
+
+		$preguntas = $this->Admin_model->getPreguntasById($_POST['id_prueba']);
+		$resp;
+		$preg;
+		$respc;
+		 foreach ($preguntas as $key ) {
+		 	# code...
+		 	$preg[]= $key->pregunta;
+		 	$resp[]= $key->respuesta1;
+		 	$resp[]= $key->respuesta2;
+		 	$resp[]= $key->respuesta3;
+		 	$resp[]= $key->respuesta4;
+		 	$respc[]= $key->respuesta1;
+		 }
+		 $respuesta = array('preguntas' =>  $preg, 'respuestas'=> $resp, 'respuestas_correctas'=> $respc, 'cantidad_preguntas'=> count($preg) );
+		 echo json_encode($respuesta);
+	}
 	public function Pruebas()
 	{	$datosg = $this->Admin_model->getData('pruebas');
+
 		
 		$data = array( "header" => "Pruebas");
 		$data['datosg']= $datosg;
