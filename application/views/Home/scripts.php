@@ -2,6 +2,7 @@
 <script type="text/javascript" src="<?= base_url()?>assets/js/jquery.min.js"></script> 
 <script type="text/javascript" src="<?= base_url()?>assets/js/functions.js"></script>
     <script>
+        var datoss =''
         function borrar(vid, controller) {
                 var idborrar = vid
 
@@ -47,10 +48,12 @@
                 var fdata = new FormData()
 
                 fdata.append("id_prueba", idConsulta);
+                datoss = ''
                 console.log(fdata)
-                $(".mostrar").remove()
-                                        $(".esconder").remove()
-
+                $("#preguntas-modal").empty()
+                 $("#bSiguiente").prop('disabled', false)
+                  $("#bSiguiente").text('siguiente')
+                  $("#numeroPregunta").val(0)
                 $.ajax({
                         url: '<?=base_url()?>Home/Preguntas', // url where to submit the request
                         type: "POST", // type of action POST || GET
@@ -67,20 +70,26 @@
                                     console.log('200')
                                     console.log(obj.cantidad_preguntas)
                                     var ver = "mostrar";
-                                    $(".mostrar").remove()
-                                        $(".esconder").remove()
                                     for (var i = 0; i < obj.cantidad_preguntas; i++) {
                                         var a = i+1
                                         if (i>0) {ver = "esconder"}
                                         var a = i+1
                                         if (i===0) {
-                                            $("#preguntas-modal").append("<div class='col-md-12 ' id='pregunta"+i+"'><h3>"+obj.preguntas[i]+"</h3><hr><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest1-"+i+"' value='"+obj.respuestas[3]+"' >"+obj.respuestas[0]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest2-"+i+"' value='"+obj.respuestas[3]+"' >"+obj.respuestas[1]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest3-"+i+"' value='"+obj.respuestas[3]+"' >"+obj.respuestas[2]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest4-"+i+"' value='"+obj.respuestas[3]+"' >"+obj.respuestas[3]+"</label></div> ");
+                                            $("#preguntas-modal").append("<div class='col-md-12 ' id='pregunta"+i+"'><h3>"+obj.preguntas[i]+"</h3><hr><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest1-"+i+"' value='"+obj.respuestas[i][0]+"' >"+obj.respuestas[i][0]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest2-"+i+"' value='"+obj.respuestas[i][1]+"' >"+obj.respuestas[i][1]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest3-"+i+"' value='"+obj.respuestas[i][2]+"' >"+obj.respuestas[i][2]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest4-"+i+"' value='"+obj.respuestas[i][3]+"' >"+obj.respuestas[i][3]+"</label></div> ");
                                         }
                                         if (i!==0) {
-                                            $("#preguntas-modal").append("<div class='col-md-12 esconder' id='pregunta"+i+"'><h3>"+obj.preguntas[i]+"</h3><hr><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest1-"+i+"' value='"+obj.respuestas[3]+"' >"+obj.respuestas[0]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest2-"+i+"' value='"+obj.respuestas[3]+"' >"+obj.respuestas[1]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest3-"+i+"' value='"+obj.respuestas[3]+"' >"+obj.respuestas[2]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest4-"+i+"' value='"+obj.respuestas[3]+"' >"+obj.respuestas[3]+"</label></div> ");
+                                            $("#preguntas-modal").append("<div class='col-md-12 esconder' id='pregunta"+i+"'><h3>"+obj.preguntas[i]+"</h3><hr><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest1-"+i+"' value='"+obj.respuestas[i][0]+"' >"+obj.respuestas[i][0]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest2-"+i+"' value='"+obj.respuestas[i][1]+"' >"+obj.respuestas[i][1]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest3-"+i+"' value='"+obj.respuestas[i][2]+"' >"+obj.respuestas[i][2]+"</label></div><div class='radio '><label><input type='radio' name='optionsRadios' id='respuest4-"+i+"' value='"+obj.respuestas[i][3]+"' >"+obj.respuestas[i][3]+"</label></div> ");
                                         }
                                         $("#cantidadP").val(obj.cantidad_preguntas)
-
+                                        var rpc=''
+                                        for (var a =0; a < obj.respuestas_correctas.length; a++) {
+                                                         rpc= rpc+ obj.respuestas_correctas[a]
+                                                         if (parseInt(a)+1 != obj.respuestas_correctas.length) {
+                                                             rpc= rpc+','
+                                                         }             
+                                        } 
+                                        $("#resp").val(rpc)
+                                        
                                     }
                                     
 
@@ -103,7 +112,8 @@
         
 
         $("#bSiguiente").click(function(event) {
-
+            
+            
             var nume 
             if (!$("#numeroPregunta").val()) {
                 nume=0
@@ -115,23 +125,43 @@
             nume= parseInt(nume)+1
             if (nume < cantidadP) {
                 $("#pregunta"+nume).removeClass("esconder")
+                datoss = datoss + $("input[name=optionsRadios]:checked").val()
+                datoss = String(datoss) +','
+                console.log(datoss)
 
             }
             $("#numeroPregunta").val(nume)
             if (parseInt(nume)+1 == cantidadP) {
+                
                 $("#bSiguiente").text("ver resultado")
                 
             }
             if (nume == cantidadP) {
+                datoss = String(datoss)+ $("input[name=optionsRadios]:checked").val()
                 $("#bSiguiente").prop('disabled', true)
-                resultadoTest()
+                console.log(datoss)
+                resultadoTest(nume,datoss)
             }
             
-            console.log(nume)
         });
-         function resultadoTest() {
+         function resultadoTest(nume,datoss) {
+            var datos = String(datoss)
+           var rc= $("#resp").val()
+           var contador =0
+           var rc1 = rc.split(",")
+           var rcu = datos.split(",")
+           for (var i = 0; i < nume; i++) {
+            if (rc1[i]== rcu[i]) {
+                console.log(rc1[i])
+                console.log(rcu[i])
+                contador= parseInt(contador)+ 1
+            }
+               console.log(rc1)
+                console.log(rcu)
+           }
             $("#preguntas-modal").addClass("text-center fact-counter")
-                $("#preguntas-modal").append('<div class="post-title col-sm-6 col-md-6"><div class="section-title"><h2 class="title">Bar Chart</h2></div><div id="barChart"><canvas id="barChartmist" height="450" width="600"></canvas></div></div> ');
+                $("#preguntas-modal").append('<div class="post-title col-sm-6 col-md-6"><div class="section-title"><h2 class="title">La prueba finalizó</h2></div><h3>Acertaste '+contador+'  de '+nume+'</h3><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Respuestas correctas</button><div class="collapse" id="collapseExample"><div class="well"><p>'+rc+'</p></div></div> ');
+                
 
         }
     </script>

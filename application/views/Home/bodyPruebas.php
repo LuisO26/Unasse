@@ -43,6 +43,8 @@
                 </div>
                 <input type='hidden' name='numeroPregunta' id='numeroPregunta'  >
                 <input type='hidden' name='cantidadP' id='cantidadP'  >
+                <input type='hidden' name='resp' id='resp'  >
+
                 
                 <div class="clearfix"></div>
 
@@ -58,8 +60,11 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body " >
+        <form action="" >
         <div class='row ' id="preguntas-modal">
+
         </div>
+        </form>
        
       </div>
       <div class="modal-footer">

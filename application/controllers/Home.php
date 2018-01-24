@@ -153,14 +153,20 @@ $result  = array('status' => 200 , 'mensaje'=> 'Mensaje enviado.' );
 		$resp;
 		$preg;
 		$respc;
+		$a =0;
 		 foreach ($preguntas as $key ) {
 		 	# code...
+
 		 	$preg[]= $key->pregunta;
-		 	$resp[]= $key->respuesta1;
-		 	$resp[]= $key->respuesta2;
-		 	$resp[]= $key->respuesta3;
-		 	$resp[]= $key->respuesta4;
+		 	$resp[$a]=  array($key->respuesta1, $key->respuesta2, $key->respuesta3, $key->respuesta4);
+		 	
 		 	$respc[]= $key->respuesta1;
+		 	$a++;
+		 }
+		 $num = count($resp);
+		 for ($i=0; $i <$num ; $i++) { 
+		 	# code...
+		 	shuffle($resp[$i]);
 		 }
 		 $respuesta = array('preguntas' =>  $preg, 'respuestas'=> $resp, 'respuestas_correctas'=> $respc, 'cantidad_preguntas'=> count($preg) );
 		 echo json_encode($respuesta);
